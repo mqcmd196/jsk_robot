@@ -44,7 +44,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_simplified.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_v2_simplified.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="">
         <color rgba="0.356 0.361 0.376 1" />
@@ -53,7 +53,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_simplified.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_v2_simplified.stl" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
