@@ -13,8 +13,11 @@
   <param name="base_controller/track_width" value="0.37476"/>
   <param name="head_camera/driver/z_offset_mm" value="4"/>
   <param name="head_camera/driver/z_scaling" value="1.0202112"/>
-  <arg name="rgb_camera_info_url" default="file:///etc/ros/indigo/depth_2019_12_11_03_27_26.yaml"/>
-  <arg name="depth_camera_info_url" default="file:///etc/ros/indigo/depth_2019_12_11_03_27_26.yaml"/>
+  <!-- use symbolic link: s-kitagawa (2020/09/18) -->
+  <arg name="rgb_camera_info_url" default="file:///etc/ros/indigo/depth_latest.yaml"/>
+  <arg name="depth_camera_info_url" default="file:///etc/ros/indigo/depth_latest.yaml"/>
+  <!-- <arg name="rgb_camera_info_url" default="file:///etc/ros/indigo/depth_2019_12_11_03_27_26.yaml"/> -->
+  <!-- <arg name="depth_camera_info_url" default="file:///etc/ros/indigo/depth_2019_12_11_03_27_26.yaml"/> -->
 
   <!-- Odometry -->
   <param name="base_controller/publish_tf" value="false"/>
@@ -24,8 +27,8 @@
   <!-- calibration: s-kitagawa (2019/12/11) -->
   <!-- testing urdf with head box by shinjo (2020/02/13) -->
   <!-- URDF -->
-  <param name="robot_description" textfile="/etc/ros/indigo/calibrated_2019_12_11_03_27_26.urdf"/>
-  <!-- <param name="robot_description" command="$(find xacro)/xacro $(find jsk_fetch_startup)/robots/jsk_fetch.urdf.xacro" /> -->
+  <!-- <param name="robot_description" textfile="/etc/ros/indigo/calibrated_2019_12_11_03_27_26.urdf"/> -->
+  <param name="robot_description" command="$(find xacro)/xacro $(find jsk_fetch_startup)/robots/jsk_fetch.urdf.xacro" />
 
   <!-- Drivers for Base -->
   <node name="robot_driver" launch-prefix="$(arg launch_prefix)" pkg="fetch_drivers" type="robot_driver" output="screen">
