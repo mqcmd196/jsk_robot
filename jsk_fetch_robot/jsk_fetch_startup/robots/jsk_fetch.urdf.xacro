@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <robot name="fetch" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="/etc/ros/indigo/calibrated_latest.urdf" />
+
   <link name="t265_base_link">
   </link>
   <joint name="t265_to_base_virtual_joint" type="fixed">
@@ -37,4 +38,32 @@
     <child link="base_camera_mount" />
     <axis xyz="0 0 1" />
   </joint>
+
+  <joint name="head_box_virtual_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0" />
+    <parent link="head_pan_link" />
+    <child link="head_box_link" />
+  </joint>
+  <link name="head_box_link" >
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertial ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_simplified.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="">
+        <color rgba="0.356 0.361 0.376 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="package://jsk_fetch_accessories/head_box/fetch_head_box_simplified.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
 </robot>
