@@ -81,3 +81,7 @@
     local-name: tork-a/visualization_rwt
     uri: https://github.com/tork-a/visualization_rwt.git
     version: knorth55/fetch15
+- git:
+    local-name: ros-planning/navigation
+    uri: https://github.com/ros-planning/navigation.git
+    version: 708yamaguchi/add-max-vel-name-param-indigo

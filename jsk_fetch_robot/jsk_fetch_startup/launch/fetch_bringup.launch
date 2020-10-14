@@ -297,6 +297,9 @@
         limited_trans_speed: 0.2
         limited_rot_speed: 0.52
         limited_distance: 0.3
+        planner_namespace: TrajectoryPlannerROS
+        max_trans_param_name: max_vel_x
+        max_rot_param_name: max_vel_theta
       max_planning_retries: 2
     </rosparam>
   </group>
