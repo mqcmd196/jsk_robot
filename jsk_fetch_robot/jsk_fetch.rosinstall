@@ -84,4 +84,4 @@
 - git:
     local-name: ros-planning/navigation
     uri: https://github.com/ros-planning/navigation.git
-    version: 708yamaguchi/add-max-vel-name-param-indigo
+    version: 708yamaguchi/fetch15
