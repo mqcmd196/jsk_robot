@@ -257,9 +257,9 @@
         vx_samples: 10
         vth_samples: 40
         meter_scoring: true
-        pdist_scale: 32.0
-        gdist_scale: 20.0
-        occdist_scale: 0.05
+        pdist_scale: 4.0
+        gdist_scale: 2.5
+        occdist_scale: 0.00625
         dwa: true
       recovery_behavior_enabled: true
       recovery_behaviors:
