@@ -57,15 +57,22 @@ plugins:
         - /head_camera/rgb/throttled/image_rect_color/compressed
         - /head_camera/depth_registered/throttled/image_rect/compressedDepth
         - /audio
+  - name: result_recorder_plugin
+    type: app_recorde/result_recorder_plugin
+    plugin_args:
+      result_path: /tmp
+      result_title: go_to_kitchen_result.yaml
   - name: gdrive_uploader_plugin
     type: app_uploader/gdrive_uploader_plugin
     plugin_args:
       upload_file_paths:
+        - /tmp/go_to_kitchen_result.yaml
         - /tmp/go_to_kitchen_head_camera.avi
         - /tmp/go_to_kitchen_object_detection.avi
         - /tmp/go_to_kitchen_audio.wav
         - /tmp/go_to_kitchen_rosbag.bag
       upload_file_titles:
+        - go_to_kitchen_result.yaml
         - go_to_kitchen_head_camera.avi
         - go_to_kitchen_object_detection.avi
         - go_to_kitchen_audio.wav
@@ -88,6 +95,7 @@ plugin_order:
     - object_detection_video_recorder_plugin
     - respeaker_audio_recorder_plugin
     - rosbag_recorder_plugin
+    - result_recorder_plugin
     - gdrive_uploader_plugin
     - speech_notifier_plugin
     - mail_notifier_plugin
@@ -96,6 +104,7 @@ plugin_order:
     - object_detection_video_recorder_plugin
     - respeaker_audio_recorder_plugin
     - rosbag_recorder_plugin
+    - result_recorder_plugin
     - gdrive_uploader_plugin
     - speech_notifier_plugin
     - mail_notifier_plugin
