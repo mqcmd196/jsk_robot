@@ -58,7 +58,7 @@ plugins:
         - /head_camera/depth_registered/throttled/image_rect/compressedDepth
         - /audio
   - name: result_recorder_plugin
-    type: app_recorde/result_recorder_plugin
+    type: app_recorder/result_recorder_plugin
     plugin_args:
       result_path: /tmp
       result_title: go_to_kitchen_result.yaml
