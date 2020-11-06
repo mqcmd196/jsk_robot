@@ -1,6 +1,8 @@
 <launch>
   <!-- add arg launch_teleop: yamaguchi & s-kitagawa (2019/04/19) -->
   <arg name="launch_teleop" default="true" />
+  <arg name="base_camera_mount" default="false" />
+  <arg name="head_box" default="true" />
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false"/>
@@ -28,7 +30,7 @@
   <!-- testing urdf with head box by shinjo (2020/02/13) -->
   <!-- URDF -->
   <!-- <param name="robot_description" textfile="/etc/ros/indigo/calibrated_2019_12_11_03_27_26.urdf"/> -->
-  <param name="robot_description" command="$(find xacro)/xacro $(find jsk_fetch_startup)/robots/jsk_fetch.urdf.xacro" />
+  <param name="robot_description" command="$(find xacro)/xacro $(find jsk_fetch_startup)/robots/jsk_fetch.urdf.xacro base_camera_mount:=$(arg base_camera_mount) head_box:=$(arg head_box)" />
 
   <!-- Drivers for Base -->
   <node name="robot_driver" launch-prefix="$(arg launch_prefix)" pkg="fetch_drivers" type="robot_driver" output="screen">
