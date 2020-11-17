@@ -231,6 +231,7 @@
         min_obstacle_height: 0.05
       footprint_padding: 0.05
       update_frequency: 2.0
+      publish_frequency: 1.0
     </rosparam>
     <rosparam ns="move_base/local_costmap">
       inflater:
