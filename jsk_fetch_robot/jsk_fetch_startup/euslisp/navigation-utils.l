@@ -127,7 +127,9 @@
   (send *ri* :speak-jp "キッチンに向かいます。" :wait t)
   (unix::sleep 1)
   ;; Check if the lights are on in the room
-  (let (initial-light-on)
+  (let ((initial-light-on nil)
+        (success-go-to-kitchen nil)
+        (success-auto-dock nil))
     (let* ((ros-img (one-shot-subscribe "/head_camera/rgb/quater/image_rect_color" sensor_msgs::Image))
            (eus-img (ros::sensor_msgs/Image->image ros-img))
            (luminance 0) rgb-oct r g b)
@@ -149,35 +151,31 @@
           (send *ri* :speak-jp "電気をつけて" :wait t))))
     (unix::sleep 1)
     ;; stove
-    (let ((succcess-go-to-kitchen))
-      (dotimes (i n-kitchen-trial)
-        (setq success-go-to-kitchen
-              (go-to-spot "/eng2/7f/room73B2-sink-front0"
-                          (make-coords :pos #f(100 -500 0)) :undock-rotate t))
-        (when success-go-to-kitchen (return)))
-      (if success-go-to-kitchen
-        (progn ;; succeeded to go to kitchen
-          (unix:sleep 1)
-          (ros::ros-info "arrived at the kitchen stove.")
-          (send *ri* :speak-jp "キッチンのコンロの前につきました。" :wait t)
-          (unix:sleep 1)
-          ;; stove
-          (when tweet
-            (tweet-string "I took a photo at 73B2 Kitchen stove." :warning-time 3
-                          :with-image "/edgetpu_object_detector/output/image" :speak t))
-          (send *ri* :go-pos-unsafe 0 0 -45)
-          ;; sink
-          (when tweet
-            (tweet-string "I took a photo at 73B2 Kitchen sink." :warning-time 3
-                          :with-image "/edgetpu_object_detector/output/image" :speak t))
-          (send *ri* :go-pos-unsafe 0 0 -90)
-          (send *ri* :go-pos-unsafe 0 0 -90))
-        (progn ;; failed to go to kitchen
-          (ros::ros-error "failed going to the kitchen.")
-          (send *ri* :speak-jp "失敗しました。ドックに戻ります。" :wait t)
-          (ros::ros-info "start going back to the dock.")
-          (auto-dock :n-trial n-dock-trial)
-          (return-from go-to-kitchen nil))))
+    (dotimes (i n-kitchen-trial)
+      (setq success-go-to-kitchen
+            (go-to-spot "/eng2/7f/room73B2-sink-front0"
+                        (make-coords :pos #f(100 -500 0)) :undock-rotate t))
+      (when success-go-to-kitchen (return)))
+    (if success-go-to-kitchen
+      (progn ;; succeeded to go to kitchen
+        (unix:sleep 1)
+        (ros::ros-info "arrived at the kitchen stove.")
+        (send *ri* :speak-jp "キッチンのコンロの前につきました。" :wait t)
+        (unix:sleep 1)
+        ;; stove
+        (when tweet
+          (tweet-string "I took a photo at 73B2 Kitchen stove." :warning-time 3
+                        :with-image "/edgetpu_object_detector/output/image" :speak t))
+        (send *ri* :go-pos-unsafe 0 0 -45)
+        ;; sink
+        (when tweet
+          (tweet-string "I took a photo at 73B2 Kitchen sink." :warning-time 3
+                        :with-image "/edgetpu_object_detector/output/image" :speak t))
+        (send *ri* :go-pos-unsafe 0 0 -90)
+        (send *ri* :go-pos-unsafe 0 0 -90))
+      (progn ;; failed to go to kitchen
+        (ros::ros-error "failed going to the kitchen.")
+        (send *ri* :speak-jp "失敗しました。" :wait t)))
     ;; sink
     ;; (send *ri* :speak-jp "シンクに向かいます。")
     ;; (if (go-to-spot "/eng2/7f/room73B2-sink-front1" (make-coords :pos #f(100 -200 0)))
@@ -197,9 +195,10 @@
     ;;     (return-from go-to-kitchen nil)))
     (ros::ros-info "start going back to the dock.")
     (send *ri* :speak-jp "ドックに戻ります。" :wait t)
-    (auto-dock :n-trial n-dock-trial)
-    (unix::sleep 1)
-    (unless initial-light-on
+    (setq success-auto-dock (auto-dock :n-trial n-dock-trial))
+    (when (and success-auto-dock (not initial-light-on))
+      (unix::sleep 1)
       (send *ri* :speak-jp "オッケー、グーグル" :wait t)
       (send *ri* :speak-jp "電気を消して" :wait t))
-    (unix::sleep 1)))
+    (unix::sleep 1)
+    (and success-go-to-kitchen success-auto-dock)))
