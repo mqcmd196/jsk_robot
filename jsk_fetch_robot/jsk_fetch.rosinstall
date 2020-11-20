@@ -85,3 +85,7 @@
     local-name: ros-planning/navigation
     uri: https://github.com/ros-planning/navigation.git
     version: 708yamaguchi/fetch15
+- git:
+    local-name: ros-visualization/rviz
+    uri: https://github.com/ros-visualization/rviz.git
+    version: indigo-devel
