@@ -2,17 +2,24 @@
 
 (spot-init nil) ;; do not create-viewer
 
-(setq path "/home/lokada/work/2020-11-18 203458 73B1.walk" )
+;;(setq path "/home/lokada/work/2020-11-18 203458 73B1.walk" )
+(setq path "/home/lokada/work/2020-12-21 024531 eng8.walk" )
 ;; use fedical start to goal, -1 means goal
-(send *ri* :navigate-to path -1 :initial-localization-fiducial t :initial-localization-waypoint 0)
+;(send *ri* :navigate-to path -1 :initial-localization-fiducial t :initial-localization-waypoint 0)
 ;; do not use fedical but start 73b2 to 73a2
-(send *ri* :navigate-to path 7 :initial-localization-fiducial t :initial-localization-waypoint 0)
+;(send *ri* :navigate-to path 7 :initial-localization-fiducial t :initial-localization-waypoint 0)
 ;; back to 73b2
-(send *ri* :navigate-to path 0 :initial-localization-fiducial nil :initial-localization-waypoint 7)
+;(send *ri* :navigate-to path 0 :initial-localization-fiducial nil :initial-localization-waypoint 7)
 ;; go to 73a2 again, you do not need fedical
-(send *ri* :navigate-to path 7 :initial-localization-fiducial nil :initial-localization-waypoint 0)
+;(send *ri* :navigate-to path 7 :initial-localization-fiducial nil :initial-localization-waypoint 0)
 ;; and got to follow original route
-(send *ri* :navigate-to path -1 :initial-localization-fiducial nil :initial-localization-waypoint 7)
+					;(send *ri* :navigate-to path -1 :initial-localization-fiducial nil :initial-localization-waypoint 7)
+(send *ri* :stand)(unix::sleep 3)
+(send *ri* :navigate-to path 5 :initial-localization-fiducial nil :initial-localization-waypoint 0)
+(send *ri* :sit)(unix::sleep 3)
+(send *ri* :stand)(unix::sleep 3)
+(send *ri* :navigate-to path -1 :initial-localization-fiducial nil :initial-localization-waypoint 5)
+;; (send *ri* :navigate-to path 99 :initial-localization-fiducial nil :initial-localization-waypoint 50)
 (ros::ros-info "done")
 
 (send *ri* :sit)(unix::sleep 3) ;; need to fix...
