@@ -5,13 +5,20 @@ interface: jsk_fetch_startup/go_to_kitchen.interface
 icon: jsk_fetch_startup/go_to_kitchen.png
 plugins:
   - name: head_camera_video_recorder_plugin
-    type: app_recorder/video_recorder_plugin
+    type: app_recorder/audio_video_recorder_plugin
     launch_args:
       video_path: /tmp
       video_title: go_to_kitchen_head_camera.avi
-      video_topic_name: /head_camera/rgb/throttled/image_rect_color
-      video_fps: 5.0
-      video_codec: XVID
+      audio_topic_name: /audio
+      audio_channels: 1
+      audio_sample_rate: 16000
+      audio_format: wave
+      audio_sample_format: S16LE
+      video_topic_name: /head_camera/rgb/image_rect_color
+      video_height: 480
+      video_width: 640
+      video_framerate: 30
+      video_encoding: RGB
   - name: object_detection_video_recorder_plugin
     type: app_recorder/video_recorder_plugin
     launch_args:
