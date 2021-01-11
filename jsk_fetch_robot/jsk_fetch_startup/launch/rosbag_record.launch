@@ -31,7 +31,10 @@
           /head_camera/depth_registered/throttled/camera_info
           /head_camera/rgb/throttled/image_rect_color/compressed
           /head_camera/depth_registered/throttled/image_rect/compressedDepth
-          /audio"
+          /audio
+          /head_camera/mono/point_pose_extractor_elevator_panels/debug_image
+          /elevator_number/debug_image
+          /switchbot_server/command"
       output="screen" />
 
 </launch>
