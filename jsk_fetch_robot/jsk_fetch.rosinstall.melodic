@@ -22,10 +22,16 @@
     local-name: fetchrobotics/robot_controllers
     uri: https://github.com/fetchrobotics/robot_controllers.git
     version: melodic-devel
+# we need to use the development branch (respeaker-cpu-usage branch in 708yamaguchi's fork)
+# Restore jsk-ros-pkg/jsk_3rdparty master branch if https://github.com/jsk-ros-pkg/jsk_3rdparty/pull/241 is merged.
+# - git:
+#     local-name: jsk-ros-pkg/jsk_3rdparty
+#     uri: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
+#     version: master
 - git:
     local-name: jsk-ros-pkg/jsk_3rdparty
-    uri: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
-    version: master
+    uri: https://github.com/708yamaguchi/jsk_3rdparty.git
+    version: respeaker-cpu-usage
 # we need to use the development branch (fetch15 branch in knorth55's fork)
 # until it is merged to master
 - git:
