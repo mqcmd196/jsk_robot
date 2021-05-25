@@ -2,8 +2,13 @@
 
 ## SetUp (Running following commands in the first time)
 
-### Install a udev rule for realsense
+### Install a udev rule
 
+```bash
+rosrun jsk_fetch_startup install_udev.sh
+```
+
+#### For realsense
 udev rule have to be manually installed according to [this issue](https://github.com/IntelRealSense/realsense-ros/issues/1426) when using realsense-ros from ROS repository.
 
 ```bash
@@ -12,9 +17,23 @@ sudo mv 99-realsense-libusb.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
-### upstart
+### supervisor
+Install supervisor config files. e.g. `robot.conf`, `jsk_fetch_startup.conf` ...
+
 ```
-su -c 'rosrun jsk_fetch_startup install_upstart.sh'
+su -c 'rosrun jsk_fetch_startup install_supervisor.sh'
+```
+
+To show supervisor job status, access `FETCH_IP_ADDRESS:9001` by web browser.
+
+![supervisor_status](https://user-images.githubusercontent.com/19769486/119499716-f142c000-bda1-11eb-9b96-0cfa7e04a1b2.png)
+
+
+### cron
+Install cron jobs for root user and fetch user. e.g. `shutdown`, `update_workspace`.
+
+```
+su -c 'rosrun jsk_fetch_startup install_cron.sh'
 ```
 
 ### mongodb
@@ -30,6 +49,10 @@ sudo mv rockmongo-1.1.7 /var/www/html/rockmongo
 # manually change following line in /var/www/html/rockmongo/config.php
 # $MONGO["servers"][$i]["control_auth"] = false; // true;//enable control users, works only if mongo_auth=false
 ```
+
+### Coral Edge TPU
+Create ROS workspace for Coral Edge TPU. Please see:
+https://github.com/knorth55/coral_usb_ros
 
 ### Teleoperation
 
@@ -116,8 +139,11 @@ Logging script is initialized at:
 ```
 
 ### Show all logs
-
-
+Install tmuxinator config.
+```bash
+rosrun jsk_fetch_startup install_tmuxinator.sh
+```
+Show logs
 ```bash
 tmuxinator log
 ```
