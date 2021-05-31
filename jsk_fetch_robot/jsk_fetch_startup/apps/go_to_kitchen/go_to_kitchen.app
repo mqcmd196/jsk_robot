@@ -59,6 +59,9 @@ plugins:
         - /move_base/NavFnROS/plan
         - /move_base/TrajectoryPlannerROS/global_plan
         - /move_base/TrajectoryPlannerROS/local_plan
+        - /move_base/GlobalPlanner/plan
+        - /move_base/TebLocalPlannerROS/global_plan
+        - /move_base/TebLocalPlannerROS/local_plan
         - /move_base/global_costmap/footprint
         - /spots_marker_array
         - /spots_pictogram
