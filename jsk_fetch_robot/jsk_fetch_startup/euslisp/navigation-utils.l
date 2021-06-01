@@ -178,17 +178,26 @@
     (if initial-light-on
       (send *ri* :speak-jp "すでに電気がついています。" :wait t)
       (progn
+        ;; Look at Google Home
+        (send *fetch* :head :neck-y :joint-angle 89)
+        (send *ri* :angle-vector-raw (send *fetch* :angle-vector) 3000 :head-controller)
+        (send *ri* :wait-interpolation)
         ;; The accuracy of Google Home recognition is better in English than in Japanese.
         ;; (send *ri* :speak-jp "オッケー、グーグル" :wait t)
         ;; (send *ri* :speak-jp "電気をつけて" :wait t)
         (send *ri* :speak "OK, Google" :wait t)
-        (send *ri* :speak "Turn on the light." :wait t)))
+        (send *ri* :speak "Turn on the light." :wait t)
+        (send *fetch* :head :neck-y :joint-angle 0)
+        (send *ri* :angle-vector-raw (send *fetch* :angle-vector) 3000 :head-controller)
+        (send *ri* :wait-interpolation)))
     (unix::sleep 1)
     ;; change the inflation_radius
+    ;; Increase the global inflation to generate a path that is less sensitive to differences between the map shape and the actual object placement.
     (ros::set-dynamic-reconfigure-param
       "/move_base/global_costmap/inflater" "inflation_radius" :double 0.7)
+    ;; Decrease the local inflation to generate a path that allows the robot to pass close to the object.
     (ros::set-dynamic-reconfigure-param
-      "/move_base/local_costmap/inflater" "inflation_radius" :double 0.7)
+      "/move_base/local_costmap/inflater" "inflation_radius" :double 0.35)
     ;; stove
     (dotimes (i n-kitchen-trial)
       (setq success-go-to-kitchen
@@ -236,11 +245,18 @@
     (setq success-auto-dock (auto-dock :n-trial n-dock-trial))
     (when (and success-auto-dock (not initial-light-on))
       (unix::sleep 1)
+      ;; Look at Google Home
+      (send *fetch* :head :neck-y :joint-angle 89)
+      (send *ri* :angle-vector-raw (send *fetch* :angle-vector) 3000 :head-controller)
+      (send *ri* :wait-interpolation)
       ;; The accuracy of Google Home recognition is better in English than in Japanese.
       ;; (send *ri* :speak-jp "オッケー、グーグル" :wait t)
       ;; (send *ri* :speak-jp "電気を消して" :wait t)
       (send *ri* :speak "OK, Google" :wait t)
-      (send *ri* :speak "Turn off the light." :wait t))
+      (send *ri* :speak "Turn off the light." :wait t)
+      (send *fetch* :head :neck-y :joint-angle 0)
+      (send *ri* :angle-vector-raw (send *fetch* :angle-vector) 3000 :head-controller)
+      (send *ri* :wait-interpolation))
     (unix::sleep 5)
     ;; change the inflation_radius
     (ros::set-dynamic-reconfigure-param
