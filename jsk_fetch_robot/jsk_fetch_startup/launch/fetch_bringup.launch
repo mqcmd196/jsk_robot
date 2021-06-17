@@ -15,6 +15,7 @@
   <arg name="battery_warning" default="true" />
   <arg name="nav_speak" default="true" />
   <arg name="fetch_tweet" default="true" />
+  <arg name="fetch_switchbot" default="true" />
   <arg name="rwt_image_view" default="true" />
   <arg name="fetch_sensors" default="true" />
   <arg name="use_safe_teleop" default="true" />
@@ -94,6 +95,11 @@
 
   <!-- twitter -->
   <include file="$(find jsk_fetch_startup)/launch/fetch_tweet.launch" if="$(arg fetch_tweet)"/>
+
+  <!-- switchbot -->
+  <include file="$(find switchbot_ros)/launch/switchbot.launch" if="$(arg fetch_switchbot)">
+    <arg name="token" value="/var/lib/robot/switchbot_token.txt" />
+  </include>
 
   <!-- app manager -->
   <include file="$(find jsk_robot_startup)/lifelog/app_manager.launch">
