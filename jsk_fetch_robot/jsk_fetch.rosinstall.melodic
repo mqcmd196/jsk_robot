@@ -110,7 +110,8 @@
     local-name: fetchrobotics/fetch_open_auto_dock
     uri: https://github.com/fetchrobotics/fetch_open_auto_dock.git
     version: melodic-devel
+# Use https://github.com/ros-planning/navigation/pull/839 based on 7f22997e6804d9d7249b8a1d789bf27343b26f75
 - git:
-    local-name: ros-planning/navigation
-    uri: https://github.com/ros-planning/navigation.git
-    version: 7f22997e6804d9d7249b8a1d789bf27343b26f75
+    local-name: 708yamaguchi/navigation
+    uri: https://github.com/708yamaguchi/navigation.git
+    version: fetch15
