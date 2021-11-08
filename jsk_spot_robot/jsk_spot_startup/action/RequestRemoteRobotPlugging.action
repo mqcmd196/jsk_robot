@@ -1,0 +1,13 @@
+# Define the goal
+string plugging # Set 'plug' or 'unplug'
+string parameter # Expected send as json style
+float32 timeout
+---
+# Define the result
+bool remote_robot_accepted
+bool remote_robot_executable
+bool done
+---
+# Define a feedback message
+string status
+string remote_robot_status

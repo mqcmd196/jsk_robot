@@ -1,8 +1,27 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(jsk_spot_startup)
 
-find_package(catkin REQUIRED)
+find_package(
+  catkin REQUIRED COMPONENTS
+  actionlib_msgs
+)
 
+#####################
+## actionlib files ##
+#####################
+add_action_files(
+  FILES
+  RequestRemoteRobotPlugging.action
+  CallRemoteRobotApp.action
+)
+
+######################
+## message generate ##
+######################
+generate_messages(
+  DEPENDENCIES
+  actionlib_msgs
+)
 
 ###################################
 ## catkin specific configuration ##
