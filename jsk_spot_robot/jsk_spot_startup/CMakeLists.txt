@@ -12,7 +12,6 @@ find_package(
 add_action_files(
   FILES
   RequestRemoteRobotPlugging.action
-  CallRemoteRobotApp.action
 )
 
 ######################
