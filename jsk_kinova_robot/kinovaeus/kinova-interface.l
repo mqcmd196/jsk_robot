@@ -426,7 +426,7 @@ joint-vel : joint velocity [rad/s]. length must equal to the number of joint.
        (progn
          (setq r (pos-list-interpolation (list (send robot :angle-vector) av)
                                          (list (/ tm 1000.0))
-                                         0.001))
+                                         (/ (/ tm 1000.0) 500)))
          ;; TODO: Set vel and acc
          ;; https://github.com/jsk-ros-pkg/jsk_robot/pull/1313#issuecomment-771768492
          (setq trajpoints
@@ -564,7 +564,7 @@ joint-vel : joint velocity [rad/s]. length must equal to the number of joint.
          (let (r)
            (setq r (pos-list-interpolation (append (list (send robot :angle-vector)) avs)
                                            (mapcar #'(lambda (x) (/ x 1000.0)) tms)
-                                           0.001))
+                                           (/ (/ tm 1000.0) 500)))
            ;; TODO: Set vel and acc
            (setq traj-points
                  (mapcar #'(lambda (pos vel tim acc)
