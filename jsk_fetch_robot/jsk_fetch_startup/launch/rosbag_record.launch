@@ -33,7 +33,20 @@
           /server_name/smach/container_init
           /server_name/smach/container_status
           /server_name/smach/container_structure
-          /audio"
+          /audio
+          /google_chat_ros/card_activity
+          /google_chat_ros/message_activity
+          /google_chat_ros/send/cancel
+          /google_chat_ros/send/feedback
+          /google_chat_ros/send/goal
+          /google_chat_ros/send/result
+          /google_chat_ros/send/status
+          /dialog_response
+          /dialogflow_client/text_request/cancel
+          /dialogflow_client/text_request/feedback
+          /dialogflow_client/text_request/goal
+          /dialogflow_client/text_request/result
+          /dialogflow_client/text_request/status"
       output="screen" />
 
 </launch>
