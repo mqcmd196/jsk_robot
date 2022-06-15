@@ -1,0 +1,1335 @@
+leus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ rosues
+rosues: コマンドが見つかりません
+leus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ ls
+emotions.l  human_pose_publisher.py  unitree_service.py  unitree_state_publisher.py  wakeup.l  watch-dog.l
+leus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ roseus
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:0
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x5607b356d690[16374] --> 0x5607b39f68a0[32748] top=3c74
+irtgl irtglc irtviewer 
+EusLisp 9.27( 1.2.2) for Linux64 created on ip-10-0-1-65(Tue May 4 17:29:14 PST 2021)
+roseus ;; loading roseus("1.7.4") on euslisp((9.27 ip-10-0-1-65 Tue May 4 17:29:14 PST 2021  1.2.2))
+eustf roseus_c_util 1.irteusgl$ exit
+[ INFO] [1655195594.945587704]: cell* ROSEUS_EXIT(context*, int, cell**)
+leus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ rossetip 192.168.123.161
+set ROS_IP and ROS_HOSTNAME to 192.168.123.161
+[http://192.168.123.161:11311][192.168.123.161] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ rossetip
+set ROS_IP and ROS_HOSTNAME to 192.168.123.162
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ rossetmaster 192.168.123.161
+set ROS_MASTER_URI to http://192.168.123.161:11311
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ rossetip
+set ROS_IP and ROS_HOSTNAME to 192.168.123.162
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ roseus
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:0
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55dfec185690[16374] --> 0x55dfec60e8a0[32748] top=3c74
+irtgl irtglc irtviewer 
+EusLisp 9.27( 1.2.2) for Linux64 created on ip-10-0-1-65(Tue May 4 17:29:14 PST 2021)
+roseus ;; loading roseus("1.7.4") on euslisp((9.27 ip-10-0-1-65 Tue May 4 17:29:14 PST 2021  1.2.2))
+eustf roseus_c_util 1.irteusgl$ load "emotions.l"
+[rospack] Error: package 'unitreeeus' not found
+;; could not find pacakge [unitreeeus]
+Call Stack (max depth: 20):
+  0: at (error "file ~s not found" fname)
+  1: at (if (null ros::fullname) (error "file ~s not found" fname))
+  2: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  3: at (require :go1 "package://unitreeeus/go1-simple.l")
+  4: at (require :go1 "package://unitreeeus/go1-simple.l")
+  5: at (apply #'ros::load-org-for-ros ros::fullname args)
+  6: at (apply #'ros::load-org-for-ros ros::fullname args)
+  7: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  8: at (load "emotions.l")
+  9: at #<compiled-code #X55dfec23ee18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: file "package://unitreeeus/go1-simple.l" not found in (error "file ~s not found" fname)
+2.E1-irteusgl$ exit
+[ INFO] [1655195615.327057925]: cell* ROSEUS_EXIT(context*, int, cell**)
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ source ~/unitree_ws/devel/setup.bash 
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ roseus
+configuring by "/opt/ros/melodic/share/euslisp/jskeus/eus//lib/eusrt.l"
+;; readmacro ;; object ;; packsym ;; common ;; constants ;; stream ;; string ;; loader ;; pprint ;; process ;; hashtab ;; array ;; mathtran ;; eusdebug ;; eusforeign ;; extnum ;; coordinates ;; tty ;; history ;; toplevel ;; trans ;; comp ;; builtins ;; par ;; intersection ;; geoclasses ;; geopack ;; geobody ;; primt ;; compose ;; polygon ;; viewing ;; viewport ;; viewsurface ;; hid ;; shadow ;; bodyrel ;; dda ;; helpsub ;; eushelp ;; xforeign ;; Xdecl ;; Xgraphics ;; Xcolor ;; Xeus ;; Xevent ;; Xpanel ;; Xitem ;; Xtext ;; Xmenu ;; Xscroll ;; Xcanvas ;; Xtop ;; Xapplwin 
+connected to Xserver DISPLAY=:0
+X events are being asynchronously monitored.
+;; pixword ;; RGBHLS ;; convolve ;; piximage ;; pbmfile ;; image_correlation ;; oglforeign ;; gldecl ;; glconst ;; glforeign ;; gluconst ;; gluforeign ;; glxconst ;; glxforeign ;; eglforeign ;; eglfunc ;; glutil ;; gltexture ;; glprim ;; gleus ;; glview ;; toiv-undefined ;; fstringdouble irtmath irtutil irtc irtgeoc irtgraph ___time ___pgsql irtgeo euspqp pqp irtscene irtmodel irtdyna irtrobot irtsensor irtbvh irtcollada irtstl irtwrl irtpointcloud eusbullet bullet irtcollision irtx eusjpeg euspng png irtimage irtglrgb 
+;; extending gcstack 0x55e198ade690[16374] --> 0x55e198f678a0[32748] top=3c74
+irtgl irtglc irtviewer 
+EusLisp 9.27( 1.2.2) for Linux64 created on ip-10-0-1-65(Tue May 4 17:29:14 PST 2021)
+roseus ;; loading roseus("1.7.4") on euslisp((9.27 ip-10-0-1-65 Tue May 4 17:29:14 PST 2021  1.2.2))
+eustf roseus_c_util 1.irteusgl$ load "emotions.l"
+[ INFO] [1655195631.222553924]: go1-initialized
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b01ea8f0  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1b01e9780  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b01df388  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b01d5938  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b01cc638  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b0592d28  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1b0592f98  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0583b18  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b057a0f8  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b05708d0  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b0938028  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1b09382b0  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0928e30  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b091f3c8  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0915c18  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b0cdd340  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1b0cdd5b0  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0cce178  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0cc46e0  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b0cbaf30  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+t
+2.irteusgl$ load "emotions.l"
+[ WARN] [1655195806.327917901]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655195806.329393050]: go1-initialized
+Call Stack (max depth: 20):
+  0: at (apply #'ros::load-org-for-ros ros::fullname args)
+  1: at (apply #'ros::load-org-for-ros ros::fullname args)
+  2: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  3: at (load "emotions.l")
+  4: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: no such package JSK_RECOGNITION_MSGS in (apply #'ros::load-org-for-ros ros::fullname args)
+3.E1-irteusgl$ rest
+Call Stack (max depth: 20):
+  0: at (rest)
+  1: at euserror
+  2: at euserror
+  3: at (apply #'ros::load-org-for-ros ros::fullname args)
+  4: at (apply #'ros::load-org-for-ros ros::fullname args)
+  5: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  6: at (load "emotions.l")
+  7: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: mismatch argument in (rest)
+4.E2-irteusgl$ load "emotions.l"
+[ WARN] [1655195826.359808983]: ROSEUS is already installed as /go1_1655195626879718940
+Call Stack (max depth: 20):
+  0: at (apply #'ros::load-org-for-ros ros::fullname args)
+  1: at (apply #'ros::load-org-for-ros ros::fullname args)
+  2: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  3: at (load "emotions.l")
+  4: at euserror
+  5: at euserror
+  6: at (rest)
+  7: at euserror
+  8: at euserror
+  9: at (apply #'ros::load-org-for-ros ros::fullname args)
+  10: at (apply #'ros::load-org-for-ros ros::fullname args)
+  11: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  12: at (load "emotions.l")
+  13: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: undefined function load-ros-msgs in (apply #'ros::load-org-for-ros ros::fullname args)
+5.E3-irteusgl$ reset
+6.irteusgl$ load "emotions.l"
+[ WARN] [1655195830.993487649]: ROSEUS is already installed as /go1_1655195626879718940
+Call Stack (max depth: 20):
+  0: at (apply #'ros::load-org-for-ros ros::fullname args)
+  1: at (apply #'ros::load-org-for-ros ros::fullname args)
+  2: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  3: at (load "emotions.l")
+  4: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: undefined function ros::load-ros-msgs in (apply #'ros::load-org-for-ros ros::fullname args)
+7.E1-irteusgl$ (ros::add-ros-msgs "jsk_recognition_msgs")
+Call Stack (max depth: 20):
+  0: at euserror
+  1: at euserror
+  2: at (apply #'ros::load-org-for-ros ros::fullname args)
+  3: at (apply #'ros::load-org-for-ros ros::fullname args)
+  4: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  5: at (load "emotions.l")
+  6: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: undefined function ros::add-ros-msgs in euserror
+8.E2-irteusgl$ apropos 'ros-msg
+;; ros::load-ros-msgs
+;; ros::add-ros-msgs
+;; print-ros-msg  Function
+;; make-eus-pointcloud-from-ros-msg1  Function
+;; load-ros-msgs
+;; ros-msg
+;; make-eus-pointcloud-from-ros-msg  Function
+;; make-ros-msg-from-eus-pointcloud  Function
+nil
+9.E2-irteusgl$ apropos 'add-
+;; ros::muxadd-plist  Macro
+;; ros::demuxadd-_connection-header  Macro
+;; ros::roseus-add-msgs  Function
+;; ros::roseus-add-srvs  Function
+;; ros::roseus-add-files  Function
+;; ros::add-ros-msgs
+;; ros::demuxadd-plist  Macro
+;; ros::muxadd-_connection-header  Macro
+;; geometry::copy-add-vertex  Function
+;; add-wings  Function
+;; geometry::add-alist  Function
+;; add-
+;; :add-port  Constant=:add-port
+;; :add-closure  Constant=:add-closure
+;; :add-spot  Constant=:add-spot
+;; :add-objects  Constant=:add-objects
+;; :add-initcode  Constant=:add-initcode
+;; :add-directory  Constant=:add-directory
+;; :add-draw-on-param  Constant=:add-draw-on-param
+;; :add-joint  Constant=:add-joint
+;; :add-to-open-list  Constant=:add-to-open-list
+;; :add-arc  Constant=:add-arc
+;; :add-neighbor  Constant=:add-neighbor
+;; :add-arc-from-to  Constant=:add-arc-from-to
+;; :add-object  Constant=:add-object
+;; :add-controller  Constant=:add-controller
+;; :add-parent-link  Constant=:add-parent-link
+;; :add-segment  Constant=:add-segment
+;; :add-child-links  Constant=:add-child-links
+;; :add-list-to-open-list  Constant=:add-list-to-open-list
+;; :add-object-to-open-list  Constant=:add-object-to-open-list
+;; :add-message  Constant=:add-message
+;; :add-spots  Constant=:add-spots
+;; :add-tabbed-panel  Constant=:add-tabbed-panel
+;; :add-node  Constant=:add-node
+;; add-history  Function
+nil
+10.E2-irteusgl$ load "emotions.l"
+[ WARN] [1655195899.385517197]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655195900.759694573]: go1-initialized
+[ INFO] [1655195901.088209307]: #<jsk_recognition_msgs::peopleposearray #X55e1b1404030>
+[ INFO] [1655195901.187979373]: #<jsk_recognition_msgs::peopleposearray #X55e1b1404420>
+[ INFO] [1655195901.288217231]: #<jsk_recognition_msgs::peopleposearray #X55e1b13fc350>
+[ INFO] [1655195901.388169020]: #<jsk_recognition_msgs::peopleposearray #X55e1b13fc740>
+[ INFO] [1655195901.488302864]: #<jsk_recognition_msgs::peopleposearray #X55e1b13f77c0>
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b13eb808  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1b13eba78  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b13e0c78  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b13d2878  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b13c9080  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b1790a18  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1b1790c88  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1781850  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1777e00  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b176e608  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b1b35d30  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1b1b35fa0  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1b26b68  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1b1d100  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1b13920  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1b1edb048  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1b1edb2b8  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1ecbe80  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1ec2418  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1b1eb8c38  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+[ INFO] [1655195908.826329557]: #<jsk_recognition_msgs::peopleposearray #X55e1cde41818>
+[ INFO] [1655195908.926891835]: #<jsk_recognition_msgs::peopleposearray #X55e1cde50008>
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1cde2fc68  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1cde2fed8  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cde209e0  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cde16f78  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cde0d7c8  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1cbdc5508  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1cbdc5778  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cbdb6340  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cbdac8f0  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cbda30f8  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19632 0.351822 2.6816)/(2.95735/3)
+;; dif-rot : #f(0.025203 -0.068694 0.014357)/(0.074567/0.05236)
+;; dif-pos : #f(2.90532 0.737631 -1.86539)/(3.53053/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(3.62032 0.168696 -0.43847)/(3.65068/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.752225 1.30992 -3.73316)/(4.02719/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.233137 1.21098 -3.34579)/(3.56583/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.142 -1.98074)/(187.152/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>
+;;  angles : (#f(-2.58562 -1.74148 3.60246 16.8475 -21.276 -5.70182) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1cf1ea6b8  0.0 0.0 0.0 / -0.2 -0.4 0.4> #<coordinates #X55e1cf1ea928  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cf1db4a8  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cf1d1a88  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1cf1c82a8  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.154 0.682 -2.874 / -0.187 -0.331 0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  184.607 126.505 -300.778 / -0.196 -0.418 0.1> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  185.102 -126.261 -303.253 / -0.235 -0.703 0.125> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.521 126.546 -299.113 / -0.075 -0.825 -0.221> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.048 -126.952 -299.232 / 0.039 -1.042 -0.323>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  177.34 11.523 74.235 / -0.187 -0.331 0.097> #<bodyset-link #X55e19e2a03f8 FL_thigh  189.648 90.233 81.54 / -0.108 0.473 0.103> #<bodyset-link #X55e199d3f6a8 FL_calf  96.081 122.371 -107.09 / -0.196 -0.418 0.1>) (#<bodyset-link #X55e199cfafe0 FR_hip  171.961 -76.174 42.258 / -0.187 -0.331 0.1> #<bodyset-link #X55e199d4fdd8 FR_thigh  159.751 -154.872 34.679 / -0.091 0.583 0.114> #<bodyset-link #X55e199d578b8 FR_calf  46.017 -120.207 -142.046 / -0.235 -0.703 0.125>) (#<bodyset-link #X55e19e294ac0 RL_hip  -172.268 77.538 -48.005 / -0.187 -0.331 -0.158> #<bodyset-link #X55e199f1b940 RL_thigh  -153.587 154.408 -59.922 / -0.514 1.065 -0.313> #<bodyset-link #X55e199f54d30 RL_calf  -340.213 184.549 -158.061 / -0.075 -0.825 -0.221>) (#<bodyset-link #X55e199d50e88 RR_hip  -177.647 -10.159 -79.982 / -0.187 -0.331 -0.17> #<bodyset-link #X55e199d62e00 RR_thigh  -196.6 -86.82 -67.178 / -0.45 0.904 -0.262> #<bodyset-link #X55e199d61c18 RR_calf  -366.193 -66.137 -194.375 / 0.029 -1.027 -0.314>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+
+;; inverse-kinematics failed.
+;; dif-pos : #f(1.19874 -0.352476 2.68041)/(2.95733/3)
+;; dif-rot : #f(-0.025203 -0.068694 -0.014358)/(0.074567/0.05236)
+;; dif-pos : #f(3.62036 -0.168727 -0.438538)/(3.65073/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(2.90541 -0.737631 -1.86536)/(3.53059/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(-0.179159 -1.21099 -3.34915)/(3.56587/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; dif-pos : #f(0.691933 -1.30991 -3.74484)/(4.02721/3)
+;; dif-rot : #f(0.0 0.0 0.0)/(0.0/0.05236)
+;; cog-dif : #f(-187.018 0.254522)/(187.018/inf)
+;;  coords : #<coordinates #X55e199cec810  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>
+;;  angles : (#f(-2.49892 1.74148 3.6076 -16.8475 -21.276 5.7016) 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0 0.0 45.0 -90.0)
+;;    args : ((#<coordinates #X55e1bab98440  0.0 0.0 0.0 / 0.2 -0.4 -0.4> #<coordinates #X55e1bab986b0  188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1bab89278  188.1 -126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1bab7f810  -188.1 126.75 -301.227 / 0.0 -0.785 0.0> #<coordinates #X55e1bab76030  -188.1 -126.75 -301.227 / 0.0 -0.802 0.0>) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :cog-gain 0.0 :centroid-thre inf :target-centroid-pos #f(-188.1 0.0 -301.227) :cog-translation-axis :z :centroid-offset-func nil :cog-null-space nil :min-loop 2 :additional-weight-list ((#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #f(0.1 0.1 0.1 0.1 0.5 0.5))) :stop 15 :cog-gain 0.0 :additional-weight-list nil :move-target (#<bodyset-link #X55e199ce3e30 base  -0.157 -0.682 -2.873 / 0.187 -0.331 -0.37> #<cascaded-coords #X55e19a14be78 :larm-end-coords  185.102 126.261 -303.253 / 0.235 -0.703 -0.125> #<cascaded-coords #X55e19a154b10 :rarm-end-coords  184.607 -126.505 -300.778 / 0.196 -0.418 -0.1> #<cascaded-coords #X55e19a15da48 :lleg-end-coords  -191.048 126.952 -299.232 / -0.029 -1.027 0.314> #<cascaded-coords #X55e19a165000 :rleg-end-coords  -191.521 -126.546 -299.113 / 0.069 -0.84 0.225>) :link-list (nil (#<bodyset-link #X55e199e31858 FL_hip  171.958 76.174 42.258 / 0.187 -0.331 -0.1> #<bodyset-link #X55e19e2a03f8 FL_thigh  159.748 154.873 34.679 / 0.091 0.582 -0.114> #<bodyset-link #X55e199d3f6a8 FL_calf  46.016 120.207 -142.047 / 0.235 -0.703 -0.125>) (#<bodyset-link #X55e199cfafe0 FR_hip  177.337 -11.523 74.235 / 0.187 -0.331 -0.097> #<bodyset-link #X55e199d4fdd8 FR_thigh  189.645 -90.232 81.541 / 0.108 0.473 -0.103> #<bodyset-link #X55e199d578b8 FR_calf  96.08 -122.371 -107.09 / 0.196 -0.418 -0.1>) (#<bodyset-link #X55e19e294ac0 RL_hip  -177.65 10.16 -79.982 / 0.187 -0.331 0.17> #<bodyset-link #X55e199f1b940 RL_thigh  -196.602 86.82 -67.178 / 0.45 0.904 0.262> #<bodyset-link #X55e199f54d30 RL_calf  -366.195 66.138 -194.377 / -0.029 -1.027 0.314>) (#<bodyset-link #X55e199d50e88 RR_hip  -172.271 -77.538 -48.005 / 0.187 -0.331 0.158> #<bodyset-link #X55e199d62e00 RR_thigh  -153.59 -154.407 -59.922 / 0.514 1.065 0.313> #<bodyset-link #X55e199d61c18 RR_calf  -340.214 -184.549 -158.063 / 0.075 -0.825 0.221>)) :rotation-axis (t nil nil nil nil) :translation-axis (t t t t t) :dump-command nil :stop 15 :thre (3 3 3 3 3) :rthre (0.05236 0.05236 0.05236 0.05236 0.05236) :cog-gain 0.0 :centroid-thre inf :rotation-axis t :translation-axis t :debug-view nil)
+
+
+
+t
+11.E2-irteusgl$ nil
+11.E2-irteusgl$ nil
+11.E2-irteusgl$ nil
+11.E2-irteusgl$ reset
+12.irteusgl$ (load "package://unitreeeus/go1-utils.l")
+t
+13.irteusgl$ (load "package://unitreeeus/go1-utils.l")
+t
+14.irteusgl$ load "emotions.l"
+[ WARN] [1655196035.541547280]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196035.548021500]: #<jsk_recognition_msgs::peopleposearray #X55e1bae8b1b8>
+[ INFO] [1655196035.548067658]: go1-initialized
+[ INFO] [1655196035.671393080]: #<jsk_recognition_msgs::peopleposearray #X55e1bae87900>
+[ INFO] [1655196035.771363291]: #<jsk_recognition_msgs::peopleposearray #X55e1bae8b710>
+[ INFO] [1655196035.871313257]: #<jsk_recognition_msgs::peopleposearray #X55e1bae82c68>
+[ INFO] [1655196035.971363580]: #<jsk_recognition_msgs::peopleposearray #X55e1bae83058>
+[ INFO] [1655196036.071331926]: #<jsk_recognition_msgs::peopleposearray #X55e1bae7dfd0>
+[ INFO] [1655196036.171300809]: #<jsk_recognition_msgs::peopleposearray #X55e1bae7e3c0>
+[ INFO] [1655196036.271362370]: #<jsk_recognition_msgs::peopleposearray #X55e1bae8f6e8>
+[ INFO] [1655196036.371329983]: #<jsk_recognition_msgs::peopleposearray #X55e1bae78b70>
+[ INFO] [1655196036.471359578]: #<jsk_recognition_msgs::peopleposearray #X55e1bae78f48>
+[ INFO] [1655196036.571309219]: #<jsk_recognition_msgs::peopleposearray #X55e1bae73dd0>
+[ INFO] [1655196036.671354121]: #<jsk_recognition_msgs::peopleposearray #X55e1bae741c0>
+[ INFO] [1655196036.771319047]: #<jsk_recognition_msgs::peopleposearray #X55e1bae6f1f8>
+[ INFO] [1655196036.871183101]: #<jsk_recognition_msgs::peopleposearray #X55e1bae6f5e8>
+[ INFO] [1655196036.971153782]: #<jsk_recognition_msgs::peopleposearray #X55e1bae6a668>
+[ INFO] [1655196037.071137741]: #<jsk_recognition_msgs::peopleposearray #X55e1bae6aa58>
+[ INFO] [1655196037.171337460]: #<jsk_recognition_msgs::peopleposearray #X55e1bae65958>
+[ INFO] [1655196037.271459237]: #<jsk_recognition_msgs::peopleposearray #X55e1bae65d48>
+
+[ INFO] [1655196037.371376442]: #<jsk_recognition_msgs::peopleposearray #X55e1bae66138>
+t
+15.irteusgl$ load "emotions.l"
+[ WARN] [1655196054.934867925]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196054.940568373]: #<jsk_recognition_msgs::peopleposearray #X55e1bae219c0>
+[ INFO] [1655196054.940613736]: go1-initialized
+[ INFO] [1655196055.055149119]: nil
+[ INFO] [1655196055.154988610]: nil
+[ INFO] [1655196055.255122183]: nil
+[ INFO] [1655196055.355145746]: nil
+[ INFO] [1655196055.455143675]: nil
+[ INFO] [1655196055.554920789]: nil
+[ INFO] [1655196055.655171509]: nil
+[ INFO] [1655196055.755091906]: nil
+[ INFO] [1655196055.855219492]: nil
+[ INFO] [1655196055.955005579]: nil
+[ INFO] [1655196056.055163444]: nil
+[ INFO] [1655196056.154923364]: nil
+[ INFO] [1655196056.255206128]: nil
+[ INFO] [1655196056.354951369]: nil
+[ INFO] [1655196056.455160022]: nil
+[ INFO] [1655196056.555165039]: nil
+[ INFO] [1655196056.655237872]: nil
+[ INFO] [1655196056.755023240]: nil
+[ INFO] [1655196056.855148142]: nil
+[ INFO] [1655196056.955200995]: nil
+[ INFO] [1655196057.055137524]: nil
+[ INFO] [1655196057.155186961]: nil
+[ INFO] [1655196057.255102019]: nil
+[ INFO] [1655196057.355036765]: nil
+[ INFO] [1655196057.455177142]: nil
+[ INFO] [1655196057.555431905]: (#<jsk_recognition_msgs::peoplepose #X55e1bade9548>)
+
+t
+16.irteusgl$ dir #<jsk_recognition_msgs::peoplepose #X55e1bade9548> 
+Call Stack (max depth: 20):
+  0: at (dir #<jsk_recognition_msgs::peoplepose #X55e1bade9548>)
+  1: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: string expected in (dir #<jsk_recognition_msgs::peoplepose #X55e1bade9548>)
+17.E1-irteusgl$ reste
+sh: 1: reste: not found
+32512
+18.E1-irteusgl$ describe #<jsk_recognition_msgs::peoplepose #X55e1bade9548> 
+plist=nil
+ros::_connection-header=nil
+ros::_limb_names=("right_knee")
+ros::_poses=(#<geometry_msgs::pose #X55e1bade4400>)
+ros::_scores=#f()
+nil
+19.E1-irteusgl$ load "emotions.l"
+[ WARN] [1655196099.618862656]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196099.624891395]: (#<jsk_recognition_msgs::peoplepose #X55e1bbe03068>)
+[ INFO] [1655196106.938985457]: go1-initialized
+Call Stack (max depth: 20):
+  0: at (send-all (send msg :poses) :limb-names)
+  1: at (send-all (send msg :poses) :limb-names)
+  2: at (send-all (send msg :poses) :limb-names)
+  3: at (ros::ros-info "~A" (send-all (send msg :poses) :limb-names))
+  4: at (ros::spin-once)
+  5: at (ros::spin-once)
+  6: at (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once))
+  7: at (let ((#:prog14583 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)))) (progn (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil)))) #:prog14583)
+  8: at (prog1 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)) (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil))))
+  9: at (do-until-key-with-check t (ros::sleep) (ros::spin-once))
+  10: at (do-until-key (ros::sleep) (ros::spin-once))
+  11: at (apply #'ros::load-org-for-ros ros::fullname args)
+  12: at (apply #'ros::load-org-for-ros ros::fullname args)
+  13: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  14: at (load "emotions.l")
+  15: at euserror
+  16: at euserror
+  17: at (dir #<jsk_recognition_msgs::peoplepose #X55e1bade9548>)
+  18: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: cannot find method :limb-names in (send-all (send msg :poses) :limb-names)
+20.E2-irteusgl$ reset
+21.irteusgl$ setq m #<jsk_recognition_msgs::peoplepose #X55e1bade9548>
+#<jsk_recognition_msgs::peoplepose #X55e1bade9548>
+22.irteusgl$ send m :poses
+(#<geometry_msgs::pose #X55e1bade4400>)
+23.irteusgl$ (list m)
+(#<jsk_recognition_msgs::peoplepose #X55e1bade9548>)
+24.irteusgl$ (send-all (list m) :limb_names)
+(("right_knee"))
+25.irteusgl$ load "emotions.l"
+[ WARN] [1655196136.991263303]: ROSEUS is already installed as /go1_1655195626879718940
+Call Stack (max depth: 20):
+  0: at (send-all (send msg :poses) :limb-names)
+  1: at (send-all (send msg :poses) :limb-names)
+  2: at (send-all (send msg :poses) :limb-names)
+  3: at (ros::ros-info "~A" (send-all (send msg :poses) :limb-names))
+  4: at (ros::spin-once)
+  5: at (ros::spin-once)
+  6: at (go1-init)
+  7: at (apply #'ros::load-org-for-ros ros::fullname args)
+  8: at (apply #'ros::load-org-for-ros ros::fullname args)
+  9: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  10: at (load "emotions.l")
+  11: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: cannot find method :limb-names in (send-all (send msg :poses) :limb-names)
+26.E1-irteusgl$ reset
+27.irteusgl$ load "emotions.l"
+[ WARN] [1655196140.790521059]: ROSEUS is already installed as /go1_1655195626879718940
+Call Stack (max depth: 20):
+  0: at (send-all (send msg :poses) :limb-names)
+  1: at (send-all (send msg :poses) :limb-names)
+  2: at (send-all (send msg :poses) :limb-names)
+  3: at (ros::ros-info "~A" (send-all (send msg :poses) :limb-names))
+  4: at (ros::spin-once)
+  5: at (ros::spin-once)
+  6: at (go1-init)
+  7: at (apply #'ros::load-org-for-ros ros::fullname args)
+  8: at (apply #'ros::load-org-for-ros ros::fullname args)
+  9: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  10: at (load "emotions.l")
+  11: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: cannot find method :limb-names in (send-all (send msg :poses) :limb-names)
+28.E1-irteusgl$ reset
+29.irteusgl$ load "emotions.l"
+[ WARN] [1655196148.392335664]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196148.398885239]: nil
+[ INFO] [1655196148.398936028]: go1-initialized
+[ INFO] [1655196148.517236074]: nil
+[ INFO] [1655196148.617498283]: ((left_ankle))
+[ INFO] [1655196155.953483779]: ((right_eye neck nose right_ear right_shoulder) (right_wrist))
+  C-c C-cinterrupt30.B1-irteusgl$ car nil
+nil
+31.B1-irteusgl$ load "emotions.l"
+[ WARN] [1655196826.824169829]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196826.830062670]: nil
+[ INFO] [1655196826.830104366]: go1-initialized
+Call Stack (max depth: 20):
+  0: at (apply #'ros::load-org-for-ros ros::fullname args)
+  1: at (apply #'ros::load-org-for-ros ros::fullname args)
+  2: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  3: at (load "emotions.l")
+  4: at sigint-handler
+  5: at sigint-handler
+  6: at (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once))
+  7: at (let ((#:prog14989 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)))) (progn (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil)))) #:prog14989)
+  8: at (prog1 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)) (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil))))
+  9: at (do-until-key-with-check t (ros::sleep) (ros::spin-once))
+  10: at (do-until-key (ros::sleep) (ros::spin-once))
+  11: at (apply #'ros::load-org-for-ros ros::fullname args)
+  12: at (apply #'ros::load-org-for-ros ros::fullname args)
+  13: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  14: at (load "emotions.l")
+  15: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: no such package SPEECH_RECOGNITION_MSGS in (apply #'ros::load-org-for-ros ros::fullname args)
+32.E2-irteusgl$ load "emotions.l"
+[ WARN] [1655196869.188945229]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196869.420226544]: nil
+[ INFO] [1655196869.420270334]: go1-initialized
+Call Stack (max depth: 20):
+  0: at #'speech-cb
+  1: at (ros::subscribe "speech_to_text" speech_recognition_msgs::speechrecognitioncandidates #'speech-cb)
+  2: at (apply #'ros::load-org-for-ros ros::fullname args)
+  3: at (apply #'ros::load-org-for-ros ros::fullname args)
+  4: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  5: at (load "emotions.l")
+  6: at euserror
+  7: at euserror
+  8: at (apply #'ros::load-org-for-ros ros::fullname args)
+  9: at (apply #'ros::load-org-for-ros ros::fullname args)
+  10: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  11: at (load "emotions.l")
+  12: at sigint-handler
+  13: at sigint-handler
+  14: at (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once))
+  15: at (let ((#:prog14989 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)))) (progn (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil)))) #:prog14989)
+  16: at (prog1 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)) (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil))))
+  17: at (do-until-key-with-check t (ros::sleep) (ros::spin-once))
+  18: at (do-until-key (ros::sleep) (ros::spin-once))
+  19: at (apply #'ros::load-org-for-ros ros::fullname args)
+  And more...
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: undefined function speech-cb in #'speech-cb
+33.E3-irteusgl$ reset
+34.irteusgl$ load "emotions.l"
+[ WARN] [1655196877.501248755]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196877.507243847]: nil
+[ INFO] [1655196877.507295301]: go1-initialized
+[ INFO] [1655196877.686275106]: ((left_knee))
+[ INFO] [1655196885.098917560]: nil
+[ INFO] [1655196885.199835178]: ((left_eye left_ear left_shoulder))
+[ INFO] [1655196892.588799880]: nil
+[ INFO] [1655196892.588916766]: (こんにちは)
+Call Stack (max depth: 20):
+  0: at (= (car (send msg :transcript)) "こんにちは")
+  1: at (if (= (car (send msg :transcript)) "こんにちは") (happy))
+  2: at (ros::spin-once)
+  3: at (ros::spin-once)
+  4: at (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once))
+  5: at (let ((#:prog15544 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)))) (progn (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil)))) #:prog15544)
+  6: at (prog1 (while (and (null (select-stream (list *standard-input*) 1.000000e-07)) (eval t)) (ros::sleep) (ros::spin-once)) (let ((strm (car (select-stream (list *standard-input*) 0.1)))) (if strm (read-line strm nil nil))))
+  7: at (do-until-key-with-check t (ros::sleep) (ros::spin-once))
+  8: at (do-until-key (ros::sleep) (ros::spin-once))
+  9: at (apply #'ros::load-org-for-ros ros::fullname args)
+  10: at (apply #'ros::load-org-for-ros ros::fullname args)
+  11: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  12: at (load "emotions.l")
+  13: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: number expected in (= (car (send msg :transcript)) "こんにちは")
+35.E1-irteusgl$ reset
+36.irteusgl$ load "emotions.l"
+[ WARN] [1655196910.205547597]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196910.215152328]: nil
+[ INFO] [1655196910.215328105]: (こんにちは)
+Call Stack (max depth: 20):
+  0: at (= (car (send msg :transcript)) "こんにちは")
+  1: at (if (= (car (send msg :transcript)) "こんにちは") (happy))
+  2: at (ros::spin-once)
+  3: at (ros::spin-once)
+  4: at (go1-init)
+  5: at (apply #'ros::load-org-for-ros ros::fullname args)
+  6: at (apply #'ros::load-org-for-ros ros::fullname args)
+  7: at (let ((ros::fullname fname)) (when (substringp "package://" fname) (setq ros::fullname (ros::resolve-ros-path fname)) (when ros::*compile-message* (let* ((ros::urlname (url-pathname fname)) (package-name (send ros::urlname :host)) (ros::path-name (format nil "~A_~A" package-name (substitute 95 47 (concatenate string (subseq (send ros::urlname :directory-string) 1) (send ros::urlname :name))))) (ros::old-module (find ros::path-name *loaded-modules* :key #'lisp::load-module-file-name :test #'equal))) (unless ros::old-module (let* ((ros::ppath (unix:getenv "CMAKE_PREFIX_PATH")) (dir (format nil "~A/share/roseus/ros/~A" (subseq ros::ppath 0 (position 58 ros::ppath)) package-name))) (unless (probe-file dir) (unix:mkdir dir)) (compiler:compile-file-if-src-newer ros::fullname (format nil "~A/~A" dir ros::path-name)) (return-from load (load (format nil "~A/~A.so" dir ros::path-name) :entry (format nil "___~A" ros::path-name)))))))) (if (null ros::fullname) (error "file ~s not found" fname)) (apply #'ros::load-org-for-ros ros::fullname args))
+  8: at (load "emotions.l")
+  9: at #<compiled-code #X55e198b97e18>
+/opt/ros/melodic/share/euslisp/jskeus/eus/Linux64/bin/irteusgl 0 error: number expected in (= (car (send msg :transcript)) "こんにちは")
+37.E1-irteusgl$ reste
+sh: 1: reste: not found
+32512
+38.E1-irteusgl$ reset
+39.irteusgl$ load "emotions.l"
+[ WARN] [1655196916.211068292]: ROSEUS is already installed as /go1_1655195626879718940
+[ INFO] [1655196916.217199145]: nil
+[ INFO] [1655196916.217247194]: go1-initialized
+[ INFO] [1655196916.365746862]: nil
+[ INFO] [1655196916.465757919]: nil
+[ INFO] [1655196916.565952602]: nil
+[ INFO] [1655196916.666105666]: nil
+[ INFO] [1655196916.766075969]: nil
+[ INFO] [1655196916.866017314]: nil
+[ INFO] [1655196916.966098161]: nil
+[ INFO] [1655196917.065941720]: nil
+[ INFO] [1655196917.165975990]: nil
+[ INFO] [1655196917.265943136]: nil
+[ INFO] [1655196917.365997287]: nil
+[ INFO] [1655196917.465969327]: nil
+[ INFO] [1655196917.566046325]: nil
+[ INFO] [1655196917.666069489]: nil
+[ INFO] [1655196917.766035247]: nil
+[ INFO] [1655196917.865750735]: nil
+[ INFO] [1655196917.965831845]: ((right_knee))
+[ INFO] [1655196925.266005564]: nil
+[ INFO] [1655196925.266353788]: (こんにちは)
+[ INFO] [1655196932.604955409]: nil
+[ INFO] [1655196932.705286615]: nil
+[ INFO] [1655196932.805220050]: nil
+[ INFO] [1655196932.905301757]: nil
+[ INFO] [1655196933.005231902]: nil
+[ INFO] [1655196933.104916980]: nil
+[ INFO] [1655196933.204888174]: nil
+[ INFO] [1655196933.305140609]: nil
+[ INFO] [1655196933.405013968]: nil
+[ INFO] [1655196933.505303176]: nil
+[ INFO] [1655196933.605244277]: nil
+[ INFO] [1655196933.705114648]: nil
+[ INFO] [1655196933.805183038]: nil
+[ INFO] [1655196933.905218610]: nil
+[ INFO] [1655196934.005296663]: nil
+[ INFO] [1655196934.105265245]: nil
+[ INFO] [1655196934.205169503]: nil
+[ INFO] [1655196934.305166437]: nil
+[ INFO] [1655196934.405226321]: nil
+[ INFO] [1655196934.505115272]: nil
+[ INFO] [1655196934.605220967]: nil
+[ INFO] [1655196934.704996438]: nil
+[ INFO] [1655196934.804897991]: nil
+[ INFO] [1655196934.904901222]: nil
+[ INFO] [1655196935.005461272]: ((left_wrist))
+[ INFO] [1655196942.349599652]: nil
+[ INFO] [1655196942.549709811]: nil
+[ INFO] [1655196942.649805128]: nil
+[ INFO] [1655196942.849864686]: nil
+[ INFO] [1655196943.049857961]: nil
+[ INFO] [1655196943.149533897]: nil
+[ INFO] [1655196943.349718505]: nil
+[ INFO] [1655196943.449817811]: nil
+[ INFO] [1655196943.549657926]: nil
+[ INFO] [1655196943.649769549]: nil
+[ INFO] [1655196943.849814130]: nil
+[ INFO] [1655196944.049711215]: nil
+[ INFO] [1655196944.149881549]: nil
+[ INFO] [1655196944.249810536]: nil
+[ INFO] [1655196944.349858932]: nil
+[ INFO] [1655196944.449854861]: nil
+[ INFO] [1655196944.549855660]: nil
+[ INFO] [1655196944.749851237]: nil
+[ INFO] [1655196944.849910392]: nil
+[ INFO] [1655196944.949766490]: nil
+[ INFO] [1655196945.049862842]: nil
+[ INFO] [1655196945.149833382]: nil
+[ INFO] [1655196945.249810658]: nil
+[ INFO] [1655196945.349772142]: nil
+[ INFO] [1655196945.549846858]: nil
+[ INFO] [1655196945.749823642]: nil
+[ INFO] [1655196945.849758881]: nil
+[ INFO] [1655196945.949823304]: nil
+[ INFO] [1655196946.049755182]: nil
+[ INFO] [1655196946.249853265]: nil
+[ INFO] [1655196946.349837084]: nil
+[ INFO] [1655196946.449811277]: nil
+[ INFO] [1655196946.649808385]: nil
+[ INFO] [1655196946.850084952]: ((left_wrist))
+[ INFO] [1655196954.163630497]: nil
+[ INFO] [1655196954.163871499]: (いわきソープ)
+[ INFO] [1655196954.263794005]: nil
+[ INFO] [1655196954.363791225]: nil
+[ INFO] [1655196954.463798436]: nil
+[ INFO] [1655196954.563891217]: nil
+[ INFO] [1655196954.663811472]: nil
+[ INFO] [1655196954.763891673]: nil
+[ INFO] [1655196954.863838405]: nil
+[ INFO] [1655196954.963836886]: nil
+[ INFO] [1655196955.063893737]: nil
+[ INFO] [1655196955.163828247]: nil
+[ INFO] [1655196955.263907232]: nil
+[ INFO] [1655196955.363825953]: nil
+[ INFO] [1655196955.463884170]: nil
+[ INFO] [1655196955.563893838]: nil
+[ INFO] [1655196955.663899032]: nil
+[ INFO] [1655196955.763841898]: nil
+[ INFO] [1655196955.863828504]: nil
+[ INFO] [1655196955.963885852]: nil
+[ INFO] [1655196956.063842344]: nil
+[ INFO] [1655196956.163891527]: nil
+[ INFO] [1655196956.263802522]: nil
+[ INFO] [1655196956.363872020]: nil
+[ INFO] [1655196956.463897911]: nil
+[ INFO] [1655196956.663898766]: nil
+[ INFO] [1655196956.763772716]: nil
+[ INFO] [1655196956.863903772]: nil
+[ INFO] [1655196957.063775475]: nil
+[ INFO] [1655196957.163813724]: nil
+[ INFO] [1655196957.263898923]: nil
+[ INFO] [1655196957.363849932]: nil
+[ INFO] [1655196957.463857109]: nil
+[ INFO] [1655196957.563845000]: nil
+[ INFO] [1655196957.663898677]: nil
+[ INFO] [1655196957.763802945]: nil
+[ INFO] [1655196957.863902198]: nil
+[ INFO] [1655196957.963859617]: nil
+[ INFO] [1655196958.063889547]: nil
+[ INFO] [1655196958.163585637]: nil
+[ INFO] [1655196958.263570720]: nil
+[ INFO] [1655196958.363684879]: ((neck right_hip right_shoulder))
+[ INFO] [1655196965.721415720]: ((right_elbow))
+
+;; extending gcstack 0x55e198f678a0[32738] --> 0x55e1e432d270[65476] top=7fcf
+[ INFO] [1655196973.233634688]: nil
+[ INFO] [1655196973.333803964]: nil
+[ INFO] [1655196973.433692093]: nil
+[ INFO] [1655196973.533725892]: nil
+[ INFO] [1655196973.633731220]: nil
+[ INFO] [1655196973.733757359]: nil
+[ INFO] [1655196973.833722972]: nil
+[ INFO] [1655196973.933770234]: nil
+[ INFO] [1655196974.033705319]: nil
+[ INFO] [1655196974.133716699]: nil
+[ INFO] [1655196974.233662633]: nil
+[ INFO] [1655196974.333702835]: nil
+[ INFO] [1655196974.433721448]: nil
+[ INFO] [1655196974.533657244]: nil
+[ INFO] [1655196974.633734984]: nil
+[ INFO] [1655196974.733658335]: nil
+[ INFO] [1655196974.833818794]: nil
+[ INFO] [1655196974.933530078]: nil
+[ INFO] [1655196975.033507744]: nil
+[ INFO] [1655196975.133497505]: nil
+[ INFO] [1655196975.233576585]: nil
+[ INFO] [1655196975.333813866]: nil
+[ INFO] [1655196975.433755385]: nil
+[ INFO] [1655196975.533751339]: nil
+[ INFO] [1655196975.633764728]: nil
+[ INFO] [1655196975.733765677]: nil
+[ INFO] [1655196975.833744469]: nil
+[ INFO] [1655196975.933753738]: nil
+[ INFO] [1655196976.033815580]: nil
+[ INFO] [1655196976.133788849]: nil
+[ INFO] [1655196976.233748241]: nil
+[ INFO] [1655196976.333749538]: nil
+[ INFO] [1655196976.433734846]: nil
+[ INFO] [1655196976.533739423]: nil
+[ INFO] [1655196976.633743033]: nil
+[ INFO] [1655196976.733499175]: nil
+[ INFO] [1655196976.833486063]: nil
+[ INFO] [1655196976.933485271]: nil
+[ INFO] [1655196977.033734432]: nil
+[ INFO] [1655196977.133712691]: nil
+[ INFO] [1655196977.233714580]: nil
+[ INFO] [1655196977.333808384]: nil
+[ INFO] [1655196977.433763234]: nil
+[ INFO] [1655196977.533729141]: nil
+[ INFO] [1655196977.633726004]: nil
+[ INFO] [1655196977.733749886]: nil
+[ INFO] [1655196977.833725582]: nil
+[ INFO] [1655196977.933747077]: nil
+[ INFO] [1655196978.033740371]: nil
+[ INFO] [1655196978.133759595]: nil
+[ INFO] [1655196978.233716491]: nil
+[ INFO] [1655196978.333704449]: nil
+[ INFO] [1655196978.433731441]: nil
+[ INFO] [1655196978.533752896]: nil
+[ INFO] [1655196978.633758965]: nil
+[ INFO] [1655196978.733734042]: nil
+[ INFO] [1655196978.833760470]: nil
+[ INFO] [1655196978.933716963]: nil
+[ INFO] [1655196979.033763923]: nil
+[ INFO] [1655196979.133669379]: nil
+[ INFO] [1655196979.233736277]: nil
+[ INFO] [1655196979.333721946]: nil
+[ INFO] [1655196979.433676070]: nil
+[ INFO] [1655196979.533733994]: nil
+[ INFO] [1655196979.633778402]: nil
+[ INFO] [1655196979.733785452]: nil
+[ INFO] [1655196979.833759878]: nil
+[ INFO] [1655196979.933732989]: nil
+[ INFO] [1655196980.033681570]: nil
+[ INFO] [1655196980.133801994]: nil
+[ INFO] [1655196980.233751904]: nil
+[ INFO] [1655196980.333792028]: nil
+[ INFO] [1655196980.433785962]: nil
+[ INFO] [1655196980.533812121]: nil
+[ INFO] [1655196980.633795188]: nil
+[ INFO] [1655196980.733812723]: nil
+[ INFO] [1655196980.833795380]: nil
+[ INFO] [1655196980.933778400]: nil
+[ INFO] [1655196981.033801735]: nil
+[ INFO] [1655196981.133788329]: nil
+[ INFO] [1655196981.233800123]: nil
+[ INFO] [1655196981.333794920]: nil
+[ INFO] [1655196981.433782614]: nil
+[ INFO] [1655196981.533789462]: nil
+[ INFO] [1655196981.633804635]: nil
+[ INFO] [1655196981.733753699]: nil
+[ INFO] [1655196981.833704189]: nil
+[ INFO] [1655196981.933824287]: nil
+[ INFO] [1655196982.033765981]: nil
+[ INFO] [1655196982.133743749]: nil
+[ INFO] [1655196982.233653795]: nil
+[ INFO] [1655196982.333785879]: nil
+[ INFO] [1655196982.433801379]: nil
+[ INFO] [1655196982.533803192]: nil
+[ INFO] [1655196982.633715692]: nil
+[ INFO] [1655196982.733741776]: nil
+[ INFO] [1655196982.833805397]: nil
+[ INFO] [1655196982.933829264]: nil
+[ INFO] [1655196983.033769139]: nil
+[ INFO] [1655196983.133805029]: nil
+[ INFO] [1655196983.233811545]: nil
+[ INFO] [1655196983.333507311]: nil
+[ INFO] [1655196983.433496422]: nil
+[ INFO] [1655196983.533500326]: nil
+[ INFO] [1655196983.633548583]: nil
+[ INFO] [1655196983.733812342]: nil
+[ INFO] [1655196983.833830637]: nil
+[ INFO] [1655196983.933792084]: nil
+[ INFO] [1655196984.033835866]: nil
+[ INFO] [1655196984.133809364]: nil
+[ INFO] [1655196984.233800013]: nil
+[ INFO] [1655196984.333827498]: nil
+[ INFO] [1655196984.433804927]: nil
+[ INFO] [1655196984.533822963]: nil
+[ INFO] [1655196984.633695473]: nil
+[ INFO] [1655196984.733725398]: nil
+[ INFO] [1655196984.833714660]: nil
+[ INFO] [1655196984.933726984]: nil
+[ INFO] [1655196985.033710706]: nil
+[ INFO] [1655196985.133753148]: nil
+[ INFO] [1655196985.233508022]: nil
+[ INFO] [1655196985.333479172]: nil
+[ INFO] [1655196985.433467853]: nil
+[ INFO] [1655196985.533756431]: nil
+[ INFO] [1655196985.633575758]: nil
+[ INFO] [1655196985.733820645]: nil
+[ INFO] [1655196985.833827762]: nil
+[ INFO] [1655196985.933818589]: nil
+[ INFO] [1655196986.033790500]: nil
+[ INFO] [1655196986.133673737]: nil
+[ INFO] [1655196986.233838772]: nil
+[ INFO] [1655196986.333736624]: nil
+[ INFO] [1655196986.433804366]: nil
+[ INFO] [1655196986.533728210]: nil
+[ INFO] [1655196986.633840692]: nil
+[ INFO] [1655196986.733848034]: nil
+[ INFO] [1655196986.833727930]: nil
+[ INFO] [1655196986.933739862]: nil
+[ INFO] [1655196987.033714481]: nil
+[ INFO] [1655196987.133806014]: nil
+[ INFO] [1655196987.233724990]: nil
+[ INFO] [1655196987.333858278]: nil
+[ INFO] [1655196987.433842715]: nil
+[ INFO] [1655196987.533799453]: nil
+[ INFO] [1655196987.633742455]: nil
+[ INFO] [1655196987.733851711]: nil
+[ INFO] [1655196987.833834828]: nil
+[ INFO] [1655196987.933719916]: nil
+[ INFO] [1655196988.033764787]: nil
+[ INFO] [1655196988.133728571]: nil
+[ INFO] [1655196988.233822566]: nil
+[ INFO] [1655196988.333851965]: nil
+[ INFO] [1655196988.433751280]: nil
+[ INFO] [1655196988.533726654]: nil
+[ INFO] [1655196988.633839315]: nil
+[ INFO] [1655196988.733853542]: nil
+[ INFO] [1655196988.833842891]: nil
+[ INFO] [1655196988.933884421]: nil
+[ INFO] [1655196989.033846947]: nil
+[ INFO] [1655196989.133848723]: nil
+[ INFO] [1655196989.233712915]: nil
+[ INFO] [1655196989.333831953]: nil
+[ INFO] [1655196989.433711875]: nil
+[ INFO] [1655196989.533866328]: nil
+[ INFO] [1655196989.633858547]: nil
+[ INFO] [1655196989.733731120]: nil
+[ INFO] [1655196989.833872109]: nil
+[ INFO] [1655196989.933845570]: nil
+[ INFO] [1655196990.033864126]: nil
+[ INFO] [1655196990.133850528]: nil
+[ INFO] [1655196990.234210304]: ((left_eye right_eye))
+[ INFO] [1655196997.624247317]: nil
+[ INFO] [1655196997.624475330]: (アンノウン)
+[ INFO] [1655196997.724505131]: nil
+[ INFO] [1655196997.824527919]: nil
+[ INFO] [1655196997.924515798]: nil
+[ INFO] [1655196998.024533131]: nil
+[ INFO] [1655196998.124430801]: nil
+[ INFO] [1655196998.224531005]: nil
+[ INFO] [1655196998.324508763]: nil
+[ INFO] [1655196998.424514564]: nil
+[ INFO] [1655196998.524531699]: nil
+[ INFO] [1655196998.624508768]: nil
+[ INFO] [1655196998.724534581]: nil
+[ INFO] [1655196998.824559913]: nil
+[ INFO] [1655196998.924426203]: nil
+[ INFO] [1655196999.024509657]: nil
+[ INFO] [1655196999.124569119]: nil
+[ INFO] [1655196999.224508510]: nil
+[ INFO] [1655196999.324540028]: nil
+[ INFO] [1655196999.424533257]: nil
+[ INFO] [1655196999.524559563]: nil
+[ INFO] [1655196999.624447372]: nil
+[ INFO] [1655196999.724448826]: nil
+[ INFO] [1655196999.824551365]: nil
+[ INFO] [1655196999.924510472]: nil
+[ INFO] [1655197000.024383797]: nil
+[ INFO] [1655197000.124207430]: nil
+[ INFO] [1655197000.224191808]: nil
+[ INFO] [1655197000.324298915]: nil
+[ INFO] [1655197000.424301097]: nil
+[ INFO] [1655197000.524486484]: nil
+[ INFO] [1655197000.624482730]: nil
+[ INFO] [1655197000.724422691]: nil
+[ INFO] [1655197000.824491500]: nil
+[ INFO] [1655197000.924515943]: nil
+[ INFO] [1655197001.024479463]: nil
+[ INFO] [1655197001.124497080]: nil
+[ INFO] [1655197001.224475026]: nil
+[ INFO] [1655197001.324485729]: nil
+[ INFO] [1655197001.424440549]: nil
+[ INFO] [1655197001.524441724]: nil
+[ INFO] [1655197001.624489674]: nil
+[ INFO] [1655197001.724436892]: nil
+[ INFO] [1655197001.824446681]: nil
+[ INFO] [1655197001.924436846]: nil
+[ INFO] [1655197002.024502540]: nil
+[ INFO] [1655197002.124194085]: nil
+[ INFO] [1655197002.224177518]: nil
+[ INFO] [1655197002.324296671]: nil
+[ INFO] [1655197002.424232003]: nil
+[ INFO] [1655197002.524443375]: nil
+[ INFO] [1655197002.624437474]: nil
+[ INFO] [1655197002.724508677]: nil
+[ INFO] [1655197002.824435900]: nil
+[ INFO] [1655197002.924437650]: nil
+[ INFO] [1655197003.024535002]: nil
+[ INFO] [1655197003.124468660]: nil
+[ INFO] [1655197003.224546460]: nil
+[ INFO] [1655197003.324555743]: nil
+[ INFO] [1655197003.424545700]: nil
+[ INFO] [1655197003.524550403]: nil
+[ INFO] [1655197003.624446691]: nil
+[ INFO] [1655197003.724542956]: nil
+[ INFO] [1655197003.824560690]: nil
+[ INFO] [1655197003.924525501]: nil
+[ INFO] [1655197004.024485094]: nil
+[ INFO] [1655197004.124441643]: nil
+[ INFO] [1655197004.224439119]: nil
+[ INFO] [1655197004.324437253]: nil
+[ INFO] [1655197004.424553601]: nil
+[ INFO] [1655197004.524542595]: nil
+[ INFO] [1655197004.624580287]: nil
+[ INFO] [1655197004.724547966]: nil
+[ INFO] [1655197004.824434563]: nil
+[ INFO] [1655197004.924430240]: nil
+[ INFO] [1655197005.024539390]: nil
+[ INFO] [1655197005.124548846]: nil
+[ INFO] [1655197005.224467719]: nil
+[ INFO] [1655197005.324547051]: nil
+[ INFO] [1655197005.424542585]: nil
+[ INFO] [1655197005.524450503]: nil
+[ INFO] [1655197005.624379309]: nil
+[ INFO] [1655197005.724485809]: nil
+[ INFO] [1655197005.824593251]: nil
+[ INFO] [1655197005.924534241]: nil
+[ INFO] [1655197006.024465329]: nil
+[ INFO] [1655197006.124428993]: nil
+[ INFO] [1655197006.224549554]: nil
+[ INFO] [1655197006.324538555]: nil
+[ INFO] [1655197006.424455030]: nil
+[ INFO] [1655197006.524540750]: nil
+[ INFO] [1655197006.624466360]: nil
+[ INFO] [1655197006.724422643]: nil
+[ INFO] [1655197006.824588871]: nil
+[ INFO] [1655197006.924549317]: nil
+[ INFO] [1655197007.024604633]: nil
+[ INFO] [1655197007.124485803]: nil
+[ INFO] [1655197007.224567495]: nil
+[ INFO] [1655197007.324624351]: nil
+[ INFO] [1655197007.424541167]: nil
+[ INFO] [1655197007.524550189]: nil
+[ INFO] [1655197007.624423951]: nil
+[ INFO] [1655197007.724572445]: nil
+[ INFO] [1655197007.824540018]: nil
+[ INFO] [1655197007.924543852]: nil
+[ INFO] [1655197008.024460862]: nil
+[ INFO] [1655197008.124423140]: nil
+[ INFO] [1655197008.224428153]: nil
+[ INFO] [1655197008.324405413]: nil
+[ INFO] [1655197008.424424760]: nil
+[ INFO] [1655197008.524198482]: nil
+[ INFO] [1655197008.624200670]: nil
+[ INFO] [1655197008.624281674]: (言葉の代表的)
+[ INFO] [1655197008.724318224]: nil
+[ INFO] [1655197008.824226348]: nil
+[ INFO] [1655197008.924530582]: nil
+[ INFO] [1655197009.024549483]: nil
+[ INFO] [1655197009.124539728]: nil
+[ INFO] [1655197009.224198434]: nil
+[ INFO] [1655197009.324449331]: nil
+[ INFO] [1655197009.424424289]: nil
+[ INFO] [1655197009.524419632]: nil
+[ INFO] [1655197009.624394969]: nil
+[ INFO] [1655197009.724472103]: nil
+[ INFO] [1655197009.824518504]: nil
+[ INFO] [1655197009.924457507]: nil
+[ INFO] [1655197010.024458397]: nil
+[ INFO] [1655197010.124460170]: nil
+[ INFO] [1655197010.224441598]: nil
+[ INFO] [1655197010.324486437]: nil
+[ INFO] [1655197010.424471130]: nil
+[ INFO] [1655197010.524195015]: nil
+[ INFO] [1655197010.624174665]: nil
+[ INFO] [1655197010.724329601]: nil
+[ INFO] [1655197010.824479591]: nil
+[ INFO] [1655197010.924440545]: nil
+[ INFO] [1655197011.024433682]: nil
+[ INFO] [1655197011.124520158]: nil
+[ INFO] [1655197011.224467920]: nil
+[ INFO] [1655197011.324543618]: nil
+[ INFO] [1655197011.424518037]: nil
+[ INFO] [1655197011.524465563]: nil
+[ INFO] [1655197011.624465133]: nil
+[ INFO] [1655197011.724479768]: nil
+[ INFO] [1655197011.824563903]: nil
+[ INFO] [1655197011.924530675]: nil
+[ INFO] [1655197012.024585094]: nil
+[ INFO] [1655197012.124544787]: nil
+[ INFO] [1655197012.224319588]: nil
+[ INFO] [1655197012.324441456]: nil
+[ INFO] [1655197012.424529499]: nil
+[ INFO] [1655197012.524443091]: nil
+[ INFO] [1655197012.624579904]: nil
+[ INFO] [1655197012.724482420]: nil
+[ INFO] [1655197012.824578875]: nil
+[ INFO] [1655197012.924489293]: nil
+[ INFO] [1655197013.024532427]: nil
+[ INFO] [1655197013.124539429]: nil
+[ INFO] [1655197013.224447753]: nil
+[ INFO] [1655197013.324418582]: nil
+[ INFO] [1655197013.424560263]: nil
+[ INFO] [1655197013.524537085]: nil
+[ INFO] [1655197013.624444228]: nil
+[ INFO] [1655197013.724435965]: nil
+[ INFO] [1655197013.824466712]: nil
+[ INFO] [1655197013.924466542]: nil
+[ INFO] [1655197014.024473631]: nil
+[ INFO] [1655197014.124568262]: nil
+[ INFO] [1655197014.224493491]: nil
+[ INFO] [1655197014.324465611]: nil
+[ INFO] [1655197014.424468230]: nil
+[ INFO] [1655197014.524485602]: nil
+[ INFO] [1655197014.624450537]: nil
+[ INFO] [1655197014.724478115]: nil
+[ INFO] [1655197014.824476150]: nil
+[ INFO] [1655197014.924498448]: nil
+[ INFO] [1655197015.024427771]: (拘らず)
+[ INFO] [1655197015.024791965]: nil
+[ INFO] [1655197015.124459163]: nil
+[ INFO] [1655197015.224441639]: nil
+[ INFO] [1655197015.324511179]: nil
+[ INFO] [1655197015.424468160]: nil
+[ INFO] [1655197015.524484533]: nil
+[ INFO] [1655197015.624436921]: nil
+[ INFO] [1655197015.724476467]: nil
+[ INFO] [1655197015.824475481]: nil
+[ INFO] [1655197015.924474739]: nil
+[ INFO] [1655197016.024469897]: nil
+[ INFO] [1655197016.124476056]: nil
+[ INFO] [1655197016.224477435]: nil
+[ INFO] [1655197016.324459896]: nil
+[ INFO] [1655197016.424475971]: nil
+[ INFO] [1655197016.524442827]: nil
+[ INFO] [1655197016.624554480]: nil
+[ INFO] [1655197016.724537587]: nil
+[ INFO] [1655197016.824484455]: nil
+[ INFO] [1655197016.924228378]: nil
+[ INFO] [1655197017.024202765]: nil
+[ INFO] [1655197017.124369453]: nil
+[ INFO] [1655197017.224243736]: nil
+[ INFO] [1655197017.324536721]: nil
+[ INFO] [1655197017.424545196]: nil
+[ INFO] [1655197017.524527864]: nil
+[ INFO] [1655197017.624525212]: nil
+[ INFO] [1655197017.724490372]: nil
+[ INFO] [1655197017.824529607]: nil
+[ INFO] [1655197017.924534744]: nil
+[ INFO] [1655197018.024527867]: nil
+[ INFO] [1655197018.124545120]: nil
+[ INFO] [1655197018.224379321]: nil
+[ INFO] [1655197018.324564337]: nil
+[ INFO] [1655197018.424455590]: nil
+[ INFO] [1655197018.524409185]: nil
+[ INFO] [1655197018.624437591]: nil
+[ INFO] [1655197018.724451402]: nil
+[ INFO] [1655197018.824474312]: nil
+[ INFO] [1655197018.924220194]: nil
+[ INFO] [1655197019.024200849]: nil
+[ INFO] [1655197019.124318822]: nil
+[ INFO] [1655197019.224387318]: (理解できたら)
+[ INFO] [1655197019.224770349]: nil
+[ INFO] [1655197019.324417817]: nil
+[ INFO] [1655197019.424530703]: nil
+[ INFO] [1655197019.524454719]: nil
+[ INFO] [1655197019.624543256]: nil
+[ INFO] [1655197019.724518935]: nil
+[ INFO] [1655197019.824539690]: nil
+[ INFO] [1655197019.924523553]: nil
+[ INFO] [1655197020.024466347]: nil
+[ INFO] [1655197020.124461001]: nil
+[ INFO] [1655197020.224471297]: nil
+[ INFO] [1655197020.324479132]: nil
+[ INFO] [1655197020.424508908]: nil
+[ INFO] [1655197020.524482942]: nil
+[ INFO] [1655197020.624542005]: nil
+[ INFO] [1655197020.724489775]: nil
+[ INFO] [1655197020.824463843]: nil
+[ INFO] [1655197020.924412477]: nil
+[ INFO] [1655197021.024465086]: nil
+[ INFO] [1655197021.124479285]: nil
+[ INFO] [1655197021.224504865]: nil
+[ INFO] [1655197021.324463870]: nil
+[ INFO] [1655197021.424447469]: nil
+[ INFO] [1655197021.524459087]: nil
+[ INFO] [1655197021.624379748]: nil
+[ INFO] [1655197021.724461058]: nil
+[ INFO] [1655197021.824489336]: nil
+[ INFO] [1655197021.924436944]: nil
+[ INFO] [1655197022.024459312]: nil
+[ INFO] [1655197022.124543118]: nil
+[ INFO] [1655197022.224333789]: nil
+[ INFO] [1655197022.324518195]: nil
+[ INFO] [1655197022.424475411]: nil
+[ INFO] [1655197022.524545351]: nil
+[ INFO] [1655197022.624466215]: nil
+[ INFO] [1655197022.724527444]: nil
+[ INFO] [1655197022.824518943]: nil
+[ INFO] [1655197022.924475765]: nil
+[ INFO] [1655197023.024453699]: nil
+[ INFO] [1655197023.124475983]: nil
+[ INFO] [1655197023.224434986]: nil
+[ INFO] [1655197023.324398476]: (自動で)
+[ INFO] [1655197023.324728763]: nil
+[ INFO] [1655197023.424359109]: nil
+[ INFO] [1655197023.524490499]: nil
+[ INFO] [1655197023.624522260]: nil
+[ INFO] [1655197023.724485888]: nil
+[ INFO] [1655197023.824525175]: nil
+[ INFO] [1655197023.924508433]: nil
+[ INFO] [1655197024.024472296]: nil
+[ INFO] [1655197024.124483539]: nil
+[ INFO] [1655197024.224356080]: nil
+[ INFO] [1655197024.324427348]: nil
+[ INFO] [1655197024.424393596]: nil
+[ INFO] [1655197024.524525527]: nil
+[ INFO] [1655197024.624447780]: nil
+[ INFO] [1655197024.724457392]: nil
+[ INFO] [1655197024.824532223]: nil
+[ INFO] [1655197024.924516983]: nil
+[ INFO] [1655197025.024540437]: nil
+[ INFO] [1655197025.124538399]: nil
+[ INFO] [1655197025.224547495]: nil
+[ INFO] [1655197025.324230454]: nil
+[ INFO] [1655197025.424177236]: nil
+[ INFO] [1655197025.524314929]: nil
+[ INFO] [1655197025.624308878]: nil
+[ INFO] [1655197025.724475005]: nil
+[ INFO] [1655197025.824524403]: nil
+[ INFO] [1655197025.924496686]: nil
+[ INFO] [1655197026.024591549]: nil
+[ INFO] [1655197026.124473290]: nil
+[ INFO] [1655197026.224513496]: nil
+[ INFO] [1655197026.324478648]: nil
+[ INFO] [1655197026.424457339]: nil
+[ INFO] [1655197026.524526288]: nil
+[ INFO] [1655197026.624473488]: nil
+[ INFO] [1655197026.624707721]: (帰ってくる)
+[ INFO] [1655197026.724550087]: nil
+[ INFO] [1655197026.824529089]: nil
+[ INFO] [1655197026.924542223]: nil
+[ INFO] [1655197027.024473228]: nil
+[ INFO] [1655197027.124464834]: nil
+[ INFO] [1655197027.224437356]: nil
+[ INFO] [1655197027.324213212]: nil
+[ INFO] [1655197027.424227380]: nil
+[ INFO] [1655197027.524194480]: nil
+[ INFO] [1655197027.624533950]: nil
+[ INFO] [1655197027.724368489]: nil
+[ INFO] [1655197027.824503036]: nil
+[ INFO] [1655197027.924526730]: nil
+[ INFO] [1655197028.024499646]: nil
+[ INFO] [1655197028.124460314]: nil
+[ INFO] [1655197028.224419030]: nil
+[ INFO] [1655197028.324476563]: nil
+[ INFO] [1655197028.424455083]: nil
+[ INFO] [1655197028.524472252]: nil
+[ INFO] [1655197028.624459492]: nil
+[ INFO] [1655197028.724463778]: nil
+[ INFO] [1655197028.824457596]: nil
+[ INFO] [1655197028.924458857]: nil
+[ INFO] [1655197029.024459881]: nil
+[ INFO] [1655197029.124461645]: nil
+[ INFO] [1655197029.224414496]: nil
+[ INFO] [1655197029.324467022]: nil
+[ INFO] [1655197029.424473063]: nil
+[ INFO] [1655197029.524401313]: nil
+[ INFO] [1655197029.624489622]: nil
+[ INFO] [1655197029.724466693]: nil
+[ INFO] [1655197029.824493522]: nil
+[ INFO] [1655197029.924422529]: nil
+[ INFO] [1655197030.024413731]: nil
+[ INFO] [1655197030.124476142]: nil
+[ INFO] [1655197030.224464830]: nil
+[ INFO] [1655197030.324466112]: nil
+[ INFO] [1655197030.424463586]: nil
+[ INFO] [1655197030.524483928]: nil
+[ INFO] [1655197030.624459219]: nil
+[ INFO] [1655197030.724480075]: nil
+[ INFO] [1655197030.824463062]: nil
+[ INFO] [1655197030.924489223]: nil
+[ INFO] [1655197031.024465368]: nil
+[ INFO] [1655197031.124500670]: nil
+[ INFO] [1655197031.224463882]: nil
+[ INFO] [1655197031.324484164]: nil
+[ INFO] [1655197031.424457930]: nil
+[ INFO] [1655197031.524384083]: nil
+[ INFO] [1655197031.624462990]: nil
+[ INFO] [1655197031.724411199]: nil
+[ INFO] [1655197031.824452228]: nil
+[ INFO] [1655197031.924525284]: nil
+[ INFO] [1655197032.024481092]: nil
+[ INFO] [1655197032.124474060]: nil
+[ INFO] [1655197032.224356022]: nil
+[ INFO] [1655197032.324423131]: nil
+[ INFO] [1655197032.424445859]: nil
+[ INFO] [1655197032.524426150]: nil
+[ INFO] [1655197032.624441779]: nil
+[ INFO] [1655197032.724461330]: nil
+[ INFO] [1655197032.824499548]: nil
+[ INFO] [1655197032.924481842]: nil
+[ INFO] [1655197033.024459328]: nil
+[ INFO] [1655197033.124467285]: nil
+[ INFO] [1655197033.224476639]: nil
+[ INFO] [1655197033.324472229]: nil
+[ INFO] [1655197033.424417186]: nil
+[ INFO] [1655197033.524480935]: nil
+[ INFO] [1655197033.624470841]: nil
+[ INFO] [1655197033.724214866]: nil
+[ INFO] [1655197033.824205976]: nil
+[ INFO] [1655197033.924317293]: nil
+[ INFO] [1655197034.024319025]: nil
+[ INFO] [1655197034.124454518]: nil
+[ INFO] [1655197034.224502350]: nil
+[ INFO] [1655197034.324446248]: nil
+[ INFO] [1655197034.424509510]: nil
+[ INFO] [1655197034.524465569]: nil
+[ INFO] [1655197034.624474428]: nil
+[ INFO] [1655197034.724464670]: nil
+[ INFO] [1655197034.824457220]: nil
+[ INFO] [1655197034.924472250]: nil
+[ INFO] [1655197035.024464821]: nil
+[ INFO] [1655197035.124472562]: nil
+[ INFO] [1655197035.224465350]: nil
+[ INFO] [1655197035.324471087]: nil
+[ INFO] [1655197035.424469126]: nil
+[ INFO] [1655197035.524427269]: nil
+[ INFO] [1655197035.624375089]: nil
+[ INFO] [1655197035.724445232]: nil
+[ INFO] [1655197035.824200464]: nil
+[ INFO] [1655197035.924189853]: nil
+[ INFO] [1655197036.024364368]: nil
+[ INFO] [1655197036.124434388]: nil
+[ INFO] [1655197036.224421091]: nil
+[ INFO] [1655197036.324436391]: nil
+[ INFO] [1655197036.424547685]: nil
+[ INFO] [1655197036.524525236]: nil
+[ INFO] [1655197036.624533278]: nil
+[ INFO] [1655197036.724462519]: nil
+[ INFO] [1655197036.824505115]: nil
+[ INFO] [1655197036.924520882]: nil
+[ INFO] [1655197037.024475681]: nil
+[ INFO] [1655197037.124551188]: nil
+[ INFO] [1655197037.224455283]: nil
+[ INFO] [1655197037.324428312]: nil
+[ INFO] [1655197037.424526036]: nil
+[ INFO] [1655197037.524533666]: nil
+[ INFO] [1655197037.624471553]: nil
+[ INFO] [1655197037.724557193]: nil
+[ INFO] [1655197037.824374125]: nil
+[ INFO] [1655197037.924484809]: nil
+[ INFO] [1655197038.024716060]: ((right_shoulder))
+[ INFO] [1655197045.338157651]: nil
+[ INFO] [1655197045.438337728]: nil
+[ INFO] [1655197045.538616711]: ((neck right_shoulder))
+  C-c C-cinterrupt40.B1-irteusgl$ exit
+[ INFO] [1655197052.264610380]: cell* ROSEUS_EXIT(context*, int, cell**)
+[ INFO] [1655197052.264646703]: exiting roseus 0
+[http://192.168.123.161:11311][192.168.123.162] ]0;leus@ubuntu: ~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scriptsleus@ubuntu:~/unitree_ws/src/jsk-ros-pkg/jsk_robot/jsk_unitree_robot/jsk_unitree_startup/scripts$ 
