@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import rospy
 from std_msgs.msg import String
@@ -14,10 +14,10 @@ from threading import Lock
 class testNode():
     def __init__(self):
         # Publisher
-        self.pub = rospy.Publisher('/emotion_chatter', String, queue_size=1)
+        self.pub = rospy.Publisher('/emotion', String, queue_size=1)
 
         # Subscriber
-        self.sub1 = rospy.Subscriber('/Tablet/voice', SpeechRecognitionCandidates, self.speech_callback)
+        self.sub1 = rospy.Subscriber('/speech_to_text', SpeechRecognitionCandidates, self.speech_callback)
         self.sub2 = rospy.Subscriber('/people_pose', PeoplePoseArray, callback=self.callback)
         self.duration_time = rospy.Duration(30)
         self.prev_pose_detected_time = rospy.Time.now() - self.duration_time
@@ -39,10 +39,10 @@ class testNode():
                 "left_eye", "nose", "right_eye", "right_ear",
                 "left_ear"]
             if all([name in item for name in target_limbs]):
-                word = "happy"
+                message = "happy"
+                rospy.loginfo("received {}, current emotion is {}".format(item, message))
                 with self.lock:
-                    print("publish {}".format(word))
-                    self.publish(word)
+                    self.publish(message)
                     self.prev_pose_detected_time = rospy.Time.now()
                     rospy.sleep(5.0)
 
@@ -50,10 +50,9 @@ class testNode():
         self.pub.publish(data)
 
     def speech_callback(self, msg):
-        print(type(msg))
         word = msg.transcript[0]
         if word in ["こんにちは",
-                    "やっほー",
+                    "ヤッホー",
                     "こんばんは",
                     "おはよう",
                     "おはようございます"]:
@@ -81,15 +80,14 @@ class testNode():
             message = "scared"
         else:
             message = word
-        print(message)
+        rospy.loginfo("received {}, current emotion is {}".format(word, message))
         with self.lock:
-            print("self.publish(message) {}".format(message))
             self.publish(message)
             rospy.sleep(5.0)
 
 
 if __name__ == '__main__':
-    rospy.init_node('speech_to_string')
+    rospy.init_node('speech_to_emotion')
 
     time.sleep(3.0)
     node = testNode()
