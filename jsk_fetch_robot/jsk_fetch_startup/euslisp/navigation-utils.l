@@ -436,7 +436,8 @@ Args:
          (occupancy (if msg (send (elt (send msg :boxes) 0) :value)))
          (notify-text (if occupancy (if (> occupancy 1.0)
                                       "Trashcan is full."
-                                      "Trashcan is not full."))))
+                                      "Trashcan is not full.")))
+        (setq *trashbin-occupancy* occupancy))
     (when occupancy
       (ros::ros-info
        (format nil "Notify app that the occupancy of trash can is measured. ~A." occupancy))
@@ -685,6 +686,7 @@ Args:
 
 
 (defun go-to-kitchen-state-machine ()
+  (setq *trashbin-occupancy* 0.0)
   (setq *sm*
         (make-state-machine
           '((:init -> :report-start-go-to-kitchen)
@@ -948,6 +950,9 @@ Args:
                (inspect-trashcan :tweet (cdr (assoc 'tweet userdata)))
                (set-alist 'description "ゴミ箱の様子を確認したよ" userdata)
                (set-alist 'image (remove #\newline (base64encode (send *image* :serialize))) userdata)
+               (if (> *trashbin-occupancy* 1.0)
+                   (set-alist 'notification-level "NOTICE")
+                   (set-alist 'notification-level "INFO"))
                t))
             (:report-move-to-trashcan-front-failure
              '(lambda (userdata)
