@@ -10,6 +10,7 @@
 (load "package://jsk_fetch_startup/euslisp/navigation-utils.l")
 
 (ros::roseus-add-msgs "jsk_recognition_msgs")
+(ros::roseus-add-msgs "fetch_anomaly_detection")
 
 (ros::advertise "/tweet" std_msgs::String 1)
 (ros::advertise "/photo_taken" sensor_msgs::Image 1)
@@ -19,16 +20,21 @@
                              "/vqa/caption_server"
                              jsk_recognition_msgs::VQATaskAction))
 
-(defun vqa-to-json (compressed-image)
-  (let* (goal results vqa-pairs)
-    (setq goal (instance jsk_recognition_msgs::VQATaskActionGoal :init))
-    (send (send goal :goal) :compressed_image compressed-image)
-    (send *vqa-client* :send-goal goal)
-    (send *vqa-client* :wait-for-result)
-    (setq results (send (send (send *vqa-client* :get-result) :result) :result))
-    (dolist (pair results)
-      (push (cons (send pair :question) (send pair :answer)) vqa-pairs))
-    (json::stream->string #'json::encode-alist vqa-pairs)))
+(setq *class-client* (instance ros::simple-action-client :init
+                               "/cluster_server"
+                               fetch_anomaly_detection::CheckClusterAction))
+
+(defun ask-class (image spot-id)
+  (let* ((goal (instance fetch_anomaly_detection::CheckClusterActionGoal :init)))
+    (send (send goal :goal) :image image)
+    (send (send goal :goal) :spot_id spot-id)
+    (send *class-client* :send-goal goal)
+    (send *class-client* :wait-for-result)
+    (send *class-client* :get-result)))
+
+;; dump classification result
+(setq *kitchen-class-result* nil)
+(setq *tv-desk-result* nil)
 
 (defun image-cb (msg)
   (setq *image* msg))
@@ -101,8 +107,9 @@
             (:report-move-to-tv-front-failure -> :move-to-tv-desk)
 
             (:move-to-tv-desk -> :inspect-tv-desk)
+            (:inspect-tv-desk -> :act-tv-desk)
+            (:act-tv-desk -> :move-to-desk-back)
             (:move-to-tv-desk !-> :report-move-to-tv-desk-failure)
-            (:inspect-tv-desk -> :move-to-desk-back)
             (:report-move-to-tv-desk-failure -> :move-to-desk-back)
 
             (:move-to-desk-back -> :inspect-desk-back)
@@ -117,7 +124,9 @@
 
             (:move-to-kitchen-door-front -> :inspect-kitchen-door-front)
             (:move-to-kitchen-door-front !-> :report-move-to-kitchen-door-front-failure)
-            (:inspect-kitchen-door-front -> :move-to-sink-front)
+
+            (:inspect-kitchen-door-front -> :act-kitchen-door-front)
+            (:act-kitchen-door-front -> :move-to-sink-front)
             (:report-move-to-kitchen-door-front-failure -> :move-to-sink-front)
 
             (:move-to-sink-front -> :inspect-kitchen)
@@ -283,9 +292,21 @@
                  (if *image*
                    (progn
                      (set-alist 'image (remove #\newline (base64encode (send *image* :serialize))) userdata)
-                     (set-alist 'vqa (vqa-to-json *image*) userdata))
+                     (set-alist 'vqa (vqa-to-json *image*) userdata)
+                     (setq *tv-desk-result* (ask-class *image* 2)))
                    (set-alist 'image "" userdata))
                  t)))
+            (:act-tv-desk
+             '(lambda (userdata)
+               ;; TODO
+               ;; 1. 行動とのマッピングがあるかどうかを確かめる
+               ;; これはPythonとかで関数のバインドをして
+
+               ;; 1.1. あったらそれを実行
+               ;; 1.2. なかったらチャットで行動の指示を求めて，ファイルに記録
+               (let* ())
+               )
+             )
             (:report-move-to-tv-desk-failure
              '(lambda (userdata)
                (let* (label-names (notify-recognition :location "on the way to kitchen"))
