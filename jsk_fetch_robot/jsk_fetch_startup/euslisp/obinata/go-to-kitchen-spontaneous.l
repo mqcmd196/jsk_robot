@@ -24,6 +24,10 @@
                                "/cluster_server"
                                fetch_anomaly_detection::CheckClusterAction))
 
+(setq *task-client* (instance ros::simple-action-client :init
+                               "/task_decision"
+                               fetch_anomaly_detection::TaskDecisionAction))
+
 (defun ask-class (image spot-id)
   (let* ((goal (instance fetch_anomaly_detection::CheckClusterActionGoal :init)))
     (send (send goal :goal) :image image)
@@ -31,6 +35,15 @@
     (send *class-client* :send-goal goal)
     (send *class-client* :wait-for-result)
     (send *class-client* :get-result)))
+
+(defun ask-task (spot-id label)
+  (let* ((goal (instance fetch_anomaly_detection::TaskDecisionActionGoal :init)))
+    (send (send goal :goal) :spot_id spot-id)
+    (send (send goal :goal) :label label)
+    (send *task-client* :send-goal goal)
+    (send *task-client* :wait-for-result)
+    (send *task-client* :get-result)))
+
 
 ;; dump classification result
 (setq *kitchen-class-result* nil)
@@ -304,7 +317,16 @@
 
                ;; 1.1. あったらそれを実行
                ;; 1.2. なかったらチャットで行動の指示を求めて，ファイルに記録
-               (let* ())
+               (let* (class-result label label-description task-name)
+                 ;; 1. ask class number
+                 (setq class-result (ask-class *image* 2))
+                 (setq label (send class-result :label))
+                 (setq label-description (send class-result :label_description))
+                 ;; 2. as class number, ask task server the task
+                 (setq task-name (ask-task 2 label))
+
+                 )
+                 )
                )
              )
             (:report-move-to-tv-desk-failure
