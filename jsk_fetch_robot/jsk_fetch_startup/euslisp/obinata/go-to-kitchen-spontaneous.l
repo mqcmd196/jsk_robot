@@ -16,10 +16,6 @@
 (ros::advertise "/photo_taken" sensor_msgs::Image 1)
 (setq *image* nil)
 
-(setq *vqa-client* (instance ros::simple-action-client :init
-                             "/vqa/caption_server"
-                             jsk_recognition_msgs::VQATaskAction))
-
 (setq *class-client* (instance ros::simple-action-client :init
                                "/cluster_server"
                                fetch_anomaly_detection::CheckClusterAction))
@@ -27,6 +23,11 @@
 (setq *task-client* (instance ros::simple-action-client :init
                                "/task_decision"
                                fetch_anomaly_detection::TaskDecisionAction))
+
+(setq *primitive-client* (instance ros::simple-action-client :init
+                                   "/execute_primitive"
+                                   ;;TODO TYPENAME fetch_anomaly_detection::TaskDecisionAction
+                                   ))
 
 (defun ask-class (image spot-id)
   (let* ((goal (instance fetch_anomaly_detection::CheckClusterActionGoal :init)))
@@ -324,7 +325,7 @@
                  (setq label-description (send class-result :label_description))
                  ;; 2. as class number, ask task server the task
                  (setq task-name (ask-task 2 label))
-
+                 ()
                  )
                  )
                )
