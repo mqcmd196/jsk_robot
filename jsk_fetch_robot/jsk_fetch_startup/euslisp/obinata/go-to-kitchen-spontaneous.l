@@ -320,6 +320,7 @@
                ;; 1.2. なかったらチャットで行動の指示を求めて，ファイルに記録
                (let* (class-result label label-description task-name)
                  ;; 1. ask class number
+                 (ros::spin-once)
                  (setq class-result (ask-class *image* 2))
                  (setq label (send class-result :label))
                  (setq label-description (send class-result :label_description))

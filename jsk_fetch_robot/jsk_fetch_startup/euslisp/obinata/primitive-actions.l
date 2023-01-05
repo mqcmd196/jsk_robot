@@ -7,23 +7,33 @@
 (ros::roseus-add-msgs "newsapi_ros")
 (ros::roseus-add-msgs "fetch_anomaly_detection")
 
+(fetch-init)
+
 (setq *news-client* (instance ros::simple-action-client :init
                               "/newsapi_ros/get_top_headlines"
                               newsapi_ros::GetTopHeadlinesAction))
 
 
 (defun get-technology-news()
+  ;; TODO add speak function
+  ;; しゃべるならPC Watchか？
+  ;; source はImpress.co.jp
   (let* ((goal (instance newsapi_ros::GetTopHeadlinesGoal :init))
-         (news nil))
+         (speak-content ""))
     (send goal :category "technology")
     (send *news-client* :send-goal goal)
     (send *news-client* :wait-for-result)
-    (setq news (send *news-client* :get-result))
-    (dolist (n (send news :news_list))
-      (ros::ros-info (format nil "News title ~A" (send n :title))))
-    news
+    (setq *news* (send *news-client* :get-result))
+    (setq speak-content (concatenate string speak-content "IT製品関連のニュースを話すよ。"))
+    (dolist (n (send *news* :news_list))
+      (if (string= (send n :source) "Itmedia.co.jp")
+          (setq speak-content (concatenate string speak-content (send n :description)))
+          nil)
+      )
+    (ros::ros-info (format nil "Spoke news ~A" speak-content))
+    *news*
     )
-)
+  )
 
 (defclass execute-primitive-actions
     :slots (header-file go-pos-as move-to-as say-as state-as take-a-picture-as))
