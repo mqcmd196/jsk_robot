@@ -4,11 +4,13 @@
   <node name="go_to_kitchen_spontaneous" pkg="jsk_fetch_startup" type="go-to-kitchen-spontaneous.l"  required="true" output="screen" />
 
   <!-- Inference server is runned on Docker so skipping -->
+  <!-- <node name="classification_server" pkg="fetch_anomaly_detection" type="classification_demo.py" required="true" output="screen" /> -->
 
   <!-- Task execution server -->
   <node name="primitive_action_server" pkg="jsk_fetch_startup" type="primitive-actions.l" required="true" output="screen" />
 
   <!-- News task server -->
+  <!-- In jsk_3rdparty -->
   <node name="newsapi_ros" pkg="newsapi_ros" type="newsapi_node.py" required="true" output="screen" />
 
 

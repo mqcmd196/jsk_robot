@@ -11,3 +11,11 @@
 (ros::roseus-add-msgs "jsk_recognition_msgs")
 
 ;; *kitchen-class-result*
+
+(defun tv-desk-act (&key (tweet t) (n-dock-trial 1) (n-kitchen-trial 1)
+                           (control-switchbot :api))
+    (unless (boundp '*ri*)
+      (require :fetch-interface "package://fetcheus/fetch-interface.l")
+      (fetch-init))
+
+  )
