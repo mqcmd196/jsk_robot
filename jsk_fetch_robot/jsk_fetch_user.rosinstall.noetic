@@ -10,3 +10,8 @@
     local-name: ros-planning/moveit_msgs
     uri: https://github.com/ros-planning/moveit_msgs
     version: 0.10.1
+# pr2eus_moveit is not released, see https://github.com/ros/rosdistro/pull/38835
+- git:
+    local-name: jsk_pr2eus/pr2eus_moveit
+    uri: https://github.com/tork-a/jsk_pr2eus-release.git
+    version: release/melodic/pr2eus_moveit/0.3.14-3
