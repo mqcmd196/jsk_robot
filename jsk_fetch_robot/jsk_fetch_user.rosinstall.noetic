@@ -10,3 +10,8 @@
     local-name: ros-planning/moveit_msgs
     uri: https://github.com/ros-planning/moveit_msgs
     version: 0.10.1
+# Avoid collada_urdf CMake error introduced in https://github.com/ros/collada_urdf/pull/44 . It would be removed after https://github.com/ros/collada_urdf/pull/44 has been merged
+- git:
+    local-name: ros/collada_urdf
+    uri: https://github.com/werner291/collada_urdf.git
+    version: patch-1
