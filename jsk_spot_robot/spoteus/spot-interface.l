@@ -116,6 +116,7 @@
       (send r :success))))
   (:unstow-arm () (call-trigger-service "/spot/unstow_arm"))
   (:stow-arm () (call-trigger-service "/spot/stow_arm"))
+  (:carry () (call-trigger-service "/spot/carry"))
   (:gripper-open () (call-trigger-service "/spot/gripper_open"))
   (:gripper-close () (call-trigger-service "/spot/gripper_close"))
   (:start-grasp
