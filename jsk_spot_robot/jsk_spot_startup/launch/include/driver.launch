@@ -150,6 +150,7 @@
     <include if="$(arg use_voicevox)" file="$(find voicevox)/launch/voicevox_texttospeech.launch">
       <arg name="launch_sound_play" value="$(arg launch_sound_play)" />
       <arg name="sound_play_respawn" value="true" />
+      <arg name="device" value="plughw:UC,0" />
     </include>
   </group>
   
