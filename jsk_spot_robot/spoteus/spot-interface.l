@@ -52,6 +52,27 @@
     (ros::ros-info "Call \"~A\" returns \"~A\"" srvname (send r :message))
     (send r :success)))
 
+(defun call-constrained-manip-service (srvname &key
+                                                 task-velocity
+                                                 force-limit
+                                                 torque-limit
+                                                 target
+                                                 (wait nil))
+  "Call constrianed manipulation service"
+  (let (r)
+    (when (send *ri* :simulation-modep)
+      (ros::ros-warn "call constrained manipulation service (~A) ~A ~A ~A ~A ~A"
+                     srvname task-velocity force-limit torque-limit target velocity-limit)
+      (return from call-constrained-manip-service t))
+    (if wait (ros::wait-for-service srvname))
+    (setq r (ros::service-call srvname (instance spot_msgs::ConstrainedManipulationRequest :init
+                                                 :task_velocity task-velocity
+                                                 :force_limit force-limit
+                                                 :torque_limit torque-limit
+                                                 :target target)))
+    (ros::ros-info "Call \"~A\" returns \"~A\"" srvname (send r :message))
+    (send r :success)))
+
 (defclass spot-interface
   :super robot-move-base-interface
   :slots (trajectory-cmd-action pick-object-in-image-client pick-object-in-image-feedback-msg)
@@ -119,6 +140,62 @@
   (:carry () (call-trigger-service "/spot/carry"))
   (:gripper-open () (call-trigger-service "/spot/gripper_open"))
   (:gripper-close () (call-trigger-service "/spot/gripper_close"))
+  (:manip-crank
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/crank"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-lever
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/lever"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-left-handed-ballvalve
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/left_handed_ballvalve"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-right-handed-ballvalve
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/right_handed_ballvalve"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-cabinet
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/cabinet"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-wheel
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/wheel"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-drawer
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/drawer"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
+  (:manip-knob
+   (target &key (task-velocity 0.5) (force-limit 40) (torque-limit 5.0))
+   (call-constrained-manip-service "/spot/knob"
+                                   :task-velocity task-velocity
+                                   :force-limit force-limit
+                                   :torque-limit torque-limit
+                                   :target target))
   (:start-grasp
    ()
    (let (p s)
