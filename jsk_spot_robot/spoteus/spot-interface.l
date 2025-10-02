@@ -215,13 +215,31 @@
      (ros::ros-info "manipulator-state-is-gripper-holding-item ~A" s)
      s))
   (:pick-object-in-image
-   (image-source x y &optional (max-duration 15))
+   (image-source x y
+                 &key (max-duration 15) (wait t) grasp_constraint grasp_palm_to_fingertip axis_on_gripper_ewrt_gripper axis_to_align_with_ewrt_vo)
+   (send pick-object-in-image-client :wait-for-server)
    (let ((goal (instance spot_msgs::PickObjectInImageActionGoal :init)))
      (print (list image-source x y max-duration))
      (send goal :goal :image_source image-source)
      (send goal :goal :center (instance geometry_msgs::Point :init :x x :y y))
+     (case grasp_constraint
+       (:FORCE_TOP_DOWN_GRASP (send goal :goal :grasp_constraint 1))
+       (:FORCE_HORIZONTAL_GRASP (send goal :goal :grasp_constraint 2))
+       (:FORCE_45_ANGLE_GRASP (send goal :goal :grasp_constraint 3))
+       (:FORCE_SQUEEZE_GRASP (send goal :goal :grasp_constraint 4))
+       (t (ros::ros-info "No grasp constraint")))
+     (if grasp_palm_to_fingertip (send goal :goal :grasp_palm_to_fingertip grasp_palm_to_fingertip))
+     (cond (axis_on_gripper_ewrt_gripper
+            (send goal :goal :axis_on_gripper_ewrt_gripper :x (elt axis_on_gripper_ewrt_gripper 0))
+            (send goal :goal :axis_on_gripper_ewrt_gripper :y (elt axis_on_gripper_ewrt_gripper 1))
+            (send goal :goal :axis_on_gripper_ewrt_gripper :z (elt axis_on_gripper_ewrt_gripper 2))))
+     (cond (axis_to_align_with_ewrt_vo
+            (send goal :goal :axis_to_align_with_ewrt_vo :x (elt axis_to_align_with_ewrt_vo 0))
+            (send goal :goal :axis_to_align_with_ewrt_vo :y (elt axis_to_align_with_ewrt_vo 1))
+            (send goal :goal :axis_to_align_with_ewrt_vo :z (elt axis_to_align_with_ewrt_vo 2))))
      (send goal :goal :max_duration (instance ros::duration :init max-duration))
      (send pick-object-in-image-client :send-goal goal :feedback-cb `(lambda (msg) (send ,self :pick-object-in-image-feedback-cb msg)))
+     (if wait (send (send self :pick-object-in-image-wait-for-result) :success))
      ))
   (:pick-object-in-image-feedback-cb
    (msg)
