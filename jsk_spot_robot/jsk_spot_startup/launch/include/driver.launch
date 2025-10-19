@@ -130,6 +130,10 @@
     <include if="$(arg use_voice_text)" file="$(find voice_text)/launch/voice_text.launch">
       <arg name="launch_sound_play" value="$(arg launch_sound_play)" />
       <arg name="sound_play_respawn" value="true" />
+      <arg name="device" value="plughw:UC,0" />
+      <arg name="license_path" value="/usr/vt/risa/G16/data-common/verify" />
+      <arg name="enable_custom_engine_info" value="true" />
+      <arg name="db_path" value="/usr/vt/risa/G16" />
     </include>
     <include if="$(arg use_aques_talk)" file="$(find aques_talk)/launch/aques_talk.launch">
       <arg name="launch_sound_play" value="$(arg launch_sound_play)" />
@@ -141,7 +145,7 @@
       <arg name="device" value="plughw:UC,0" />
     </include>
   </group>
-  
+
   <!-- Notifier/Visualization -->
 
   <!-- <node -->
