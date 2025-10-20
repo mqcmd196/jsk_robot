@@ -43,6 +43,7 @@
   <exec_depend>spoteus</exec_depend>
   <exec_depend>topic_tools</exec_depend>
   <exec_depend>twist_mux</exec_depend>
+  <exec_depend>voicevox</exec_depend>
   <exec_depend>voice_text</exec_depend>
   <exec_depend>xacro</exec_depend>
   <exec_depend>xterm</exec_depend>
