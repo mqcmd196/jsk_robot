@@ -7,6 +7,7 @@
 (ros::roseus-add-msgs "spot_msgs")
 (ros::roseus-add-srvs "spot_msgs")
 (ros::roseus-add-srvs "control_msgs")
+(ros::roseus-add-msgs "cartesian_control_msgs")
 
 (defun call-trigger-service (srvname &key (wait nil))
   "Call std_srv/Trigger service"
@@ -75,7 +76,7 @@
 
 (defclass spot-interface
   :super robot-move-base-interface
-  :slots (trajectory-cmd-action pick-object-in-image-client pick-object-in-image-feedback-msg)
+  :slots (trajectory-cmd-action pick-object-in-image-client pick-object-in-image-feedback-msg cartesian-trajectory-client)
   )
 
 (defmethod spot-interface
@@ -104,6 +105,9 @@
                                         :groupname groupname))
      (setq pick-object-in-image-client (instance ros::simple-action-client :init
                                                  "/spot/pick_object_in_image" spot_msgs::PickObjectInImageAction))
+     (setq cartesian-trajectory-client (instance ros::simple-action-client :init
+                                                 "/spot/arm_controller/follow_cartesian_trajectory"
+                                                 cartesian_control_msgs::FollowCartesianTrajectoryAction))
      ))
   ;; (:default-controller  ()
   ;;  (append
@@ -196,6 +200,36 @@
                                    :force-limit force-limit
                                    :torque-limit torque-limit
                                    :target target))
+  (:arm-cartesian-trajectory
+   (target-poses &key (frame-id "grav_aligned_body") (controlled-frame "hand") (timestep 4.0) (wait t))
+   (send cartesian-trajectory-client :wait-for-server)
+   (let ((goal (instance cartesian_control_msgs::FollowCartesianTrajectoryActionGoal :init))
+         (time-from-start 0.0)
+         (points '())
+         result)
+     (send goal :goal :trajectory :header :frame_id frame-id)
+     (send goal :goal :trajectory :controlled_frame controlled-frame)
+     (dolist (pose target-poses)
+       (let ((point (instance cartesian_control_msgs::CartesianTrajectoryPoint :init))
+             (ros-time (instance ros::time :init)))
+         (send point :time_from_start (send ros-time :from-sec time-from-start))
+         (send point :pose pose)
+         (setq points (append points (list point)))
+         (incf time-from-start timestep)))
+     (send goal :goal :trajectory :points points)
+     (ros::ros-info "points: ~A" points)
+     (send cartesian-trajectory-client :send-goal goal :feedback-cb #'(lambda (msg) (send ,self :arm-cartesian-trajectory-feedback-cb msg)))
+     (when wait
+       (send cartesian-trajectory-client :wait-for-result)
+       (setq result (send cartesian-trajectory-client :get-result))
+       (case (send result :error_code)
+         (0 t)
+         (t (ros::ros-error "Got an error when executing cartesian trajectory")
+            (ros::ros-error "~A" (send result :error_string))
+            nil)))))
+  (:arm-cartesian-trajectory-feedback-cb
+   (msg)
+   (ros::ros-info "[arm-cartesian-trajectory] Got feedback: ~A" msg))
   (:start-grasp
    ()
    (let (p s)
