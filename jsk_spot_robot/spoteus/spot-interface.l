@@ -248,6 +248,8 @@
      (ros::ros-info "gripper-open-percentage ~A" p)
      (ros::ros-info "manipulator-state-is-gripper-holding-item ~A" s)
      s))
+  (:grasp-holding-override () (call-trigger-service "/spot/grasp_holding_override"))
+  (:grasp-not-holding-override () (call-trigger-service "/spot/grasp_not_holding_override"))
   (:pick-object-in-image
    (image-source x y
                  &key (max-duration 15) (wait t) grasp_constraint grasp_palm_to_fingertip axis_on_gripper_ewrt_gripper axis_to_align_with_ewrt_vo)
