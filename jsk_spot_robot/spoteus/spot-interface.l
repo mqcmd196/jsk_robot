@@ -459,8 +459,13 @@
    "Claim the robot control"
    (let ((client (send self :state :leases-body-client-name)))
      (if (or (null client) (string= client ""))
-	 (call-trigger-service "/spot/claim")
-       (ros::ros-warn "robot is already claimed by ~A" client))))
+	     (call-trigger-service "/spot/claim")
+         (progn
+           (ros::ros-warn "robot is already claimed by ~A" client)
+           nil))))
+  (:hijack ()
+   "Claim the robot control even another client is takes it"
+   (call-trigger-service "/spot/claim"))
   (:release () "Relase the robot control" (call-trigger-service "/spot/release"))
   (:power-on ()
    "Power on the robot"
