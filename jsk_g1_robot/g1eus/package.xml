@@ -8,18 +8,22 @@
   <author email="tsubaki@jsk.t.u-tokyo.ac.jp">Michitoshi Tsubaki</author>
   <license>BSD</license>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
+  <!-- g1eus is a ROS 2 only package. On ROS 1 it is built as a dummy
+       package (see CMakeLists.txt), so it only depends on catkin there. -->
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
 
-  <depend>builtin_interfaces</depend>
-  <depend>control_msgs</depend>
-  <depend>geometry_msgs</depend>
-  <depend>roseus</depend>
-  <depend>sensor_msgs</depend>
-  <depend>trajectory_msgs</depend>
+  <depend condition="$ROS_VERSION == 2">builtin_interfaces</depend>
+  <depend condition="$ROS_VERSION == 2">control_msgs</depend>
+  <depend condition="$ROS_VERSION == 2">geometry_msgs</depend>
+  <depend condition="$ROS_VERSION == 2">roseus</depend>
+  <depend condition="$ROS_VERSION == 2">sensor_msgs</depend>
+  <depend condition="$ROS_VERSION == 2">trajectory_msgs</depend>
 
-  <exec_depend>g1_description</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">g1_description</exec_depend>
 
   <export>
-    <build_type>ament_cmake</build_type>
+    <build_type condition="$ROS_VERSION == 1">catkin</build_type>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
   </export>
 </package>
