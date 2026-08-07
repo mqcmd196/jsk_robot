@@ -11,7 +11,7 @@
   <!-- g1eus is a ROS 2 only package. On ROS 1 it is built as a dummy
        package (see CMakeLists.txt), so it only depends on catkin there. -->
   <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
-  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake_auto</buildtool_depend>
 
   <depend condition="$ROS_VERSION == 2">builtin_interfaces</depend>
   <depend condition="$ROS_VERSION == 2">control_msgs</depend>
